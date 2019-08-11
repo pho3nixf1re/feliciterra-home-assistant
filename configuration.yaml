@@ -11,7 +11,7 @@ homeassistant:
   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: !secret home_time_zone
   # Customization file
-  customize: !include customize.yaml
+  # customize: !include customize.yaml
   customize_glob: !include customize_glob.yaml
   customize_domain: !include customize_domain.yaml
 

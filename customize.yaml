@@ -39,21 +39,3 @@
 #   friendly_name: master bedroom glass break
 # switch.zone_17_24:
 #   friendly_name: garage door
-sun.sun:
-  hidden: true
-device_tracker.brooke_phone:
-  friendly_name: Brooke's phone
-device_tracker.matt_phone:
-  friendly_name: Matt's phone
-device_tracker.kathy_phone:
-  friendly_name: Kathy's phone
-device_tracker.milton_phone:
-  friendly_name: Milton's phone
-device_tracker.esther_phone:
-  friendly_name: Esther's phone
-climate.th6220wf2006:
-  friendly_name: playroom
-climate.th6220wf2006_2:
-  friendly_name: roll tide hall
-climate.th6220wf2006_3:
-  friendly_name: mudroom
