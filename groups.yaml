@@ -18,7 +18,6 @@ Everything:
     - group.outdoor_lights
     - group.indoor_lights
     - group.outlets
-    - group.climate_control
     - group.alarm_zones
     - group.automations
     - group.indoor_fans
@@ -65,11 +64,6 @@ Outlets:
   - switch.foyer_plug_switch
   - switch.kitchen_plug_switch
   - switch.great_room_back_wall_switch
-
-Climate control:
-  - climate.th6220wf2006
-  - climate.th6220wf2006_2
-  - climate.th6220wf2006_3
 
 Alarm zones:
   - switch.zone_01_15
