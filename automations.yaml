@@ -30,7 +30,7 @@
       entity_id: lock.garage_door
     - service: homeassistant.turn_on
       entity_id:
-        - switch.foyer_plug_switch
+        - switch.foyer_outlet
     - service: homeassistant.turn_off
       entity_id:
         - switch.master_bedroom_fan
@@ -44,15 +44,15 @@
         - fri
     - service: switch.turn_on
       entity_id:
-        - switch.kitchen_cabinet_lights_switch
-        - switch.mudroom_hallway_lights_switch
+        - switch.kitchen_cabinet_lights
+        - switch.mudroom_hallway_lights
     - condition: sun
       before: sunrise
       before_offset: '-00:15:00'
     - service: switch.turn_on
       entity_id:
-        - switch.step_lights_switch
-        - switch.back_porch_lights_switch
+        - switch.step_lights
+        - switch.back_porch_lights
 
 - id: wakeup_teardown
   alias: Wakeup teardown
@@ -70,10 +70,10 @@
   action:
     service: homeassistant.turn_off
     entity_id:
-      - switch.kitchen_cabinet_lights_switch
-      - switch.mudroom_hallway_lights_switch
-      - switch.step_lights_switch
-      - switch.foyer_plug_switch
+      - switch.kitchen_cabinet_lights
+      - switch.mudroom_hallway_lights
+      - switch.step_lights
+      - switch.foyer_outlet
       - light.master_bedroom_lamp_level
 
 - id: evening
@@ -88,7 +88,7 @@
   action:
     - service: homeassistant.turn_on
       entity_id:
-        - switch.kitchen_cabinet_lights_switch
+        - switch.kitchen_cabinet_lights
         - switch.library_outlet
 
 - id: sunrise
@@ -110,10 +110,10 @@
     - service: homeassistant.turn_on
       entity_id:
         - group.outdoor_lights
-        - switch.step_lights_switch
-        - switch.back_porch_lights_switch
+        - switch.step_lights
+        - switch.back_porch_lights
         - switch.library_outlet
-        - switch.foyer_plug_switch
+        - switch.foyer_outlet
         - switch.miles_room_fan
     - service: light.turn_on
       data:
@@ -173,13 +173,13 @@
   alias: Foyer outlet timeout
   trigger:
     platform: state
-    entity_id: switch.foyer_plug_switch
+    entity_id: switch.foyer_outlet
     to: 'on'
     for:
       minutes: 120
   action:
     - service: homeassistant.turn_off
-      entity_id: switch.foyer_plug_switch
+      entity_id: switch.foyer_outlet
 
 - id: presence_leaving
   alias: Leaving
@@ -250,11 +250,11 @@
     - service: homeassistant.turn_off
       entity_id:
         - media_player.vizio_smartcast
-        - switch.mudroom_hallway_lights_switch
-        - switch.foyer_plug_switch
-        - switch.great_room_back_wall_switch
-        - switch.great_room_center_lights_switch
-        - switch.kitchen_cabinet_lights_switch
+        - switch.mudroom_hallway_lights
+        - switch.foyer_outlet
+        - switch.great_room_back_wall
+        - switch.great_room_center_lights
+        - switch.kitchen_cabinet_lights
     - service: cover.close_cover
       entity_id:
         - cover.left_door
@@ -272,11 +272,11 @@
       entity_id: lock.garage_door
     - service: homeassistant.turn_on
       entity_id:
-        - switch.mudroom_hallway_lights_switch
+        - switch.mudroom_hallway_lights
     - condition: sun
       after: sunset
       after_offset: '-00:15:00'
     - service: homeassistant.turn_on
       entity_id:
-        - switch.step_lights_switch
-        - switch.kitchen_cabinet_lights_switch
+        - switch.step_lights
+        - switch.kitchen_cabinet_lights

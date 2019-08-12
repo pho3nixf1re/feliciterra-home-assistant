@@ -44,26 +44,27 @@ Garage doors:
   - cover.right_door
 
 Outdoor lights:
-  - switch.outdoor_garage_lights_switch
-  - switch.front_porch_lights_switch
-  - switch.back_porch_lights_switch
+  - switch.outdoor_garage_lights
+  - switch.front_porch_lights
+  - switch.back_porch_lights
 
 Indoor lights:
   - light.master_bedroom_lamp_level
-  - switch.great_room_center_lights_switch
+  - switch.great_room_entry_lights
+  - switch.great_room_center_lights
   - switch.great_room_window_lights
   - switch.pool_bathroom_tub_light
-  - switch.kitchen_cabinet_lights_switch
-  - switch.library_lights_switch
-  - switch.mudroom_hallway_lights_switch
-  - switch.play_room_lights_switch
-  - switch.step_lights_switch
+  - switch.kitchen_cabinet_lights
+  - switch.library_lights
+  - switch.mudroom_hallway_lights
+  - switch.play_room_lights
+  - switch.step_lights
   - switch.office_light
 
 Outlets:
-  - switch.foyer_plug_switch
-  - switch.kitchen_plug_switch
-  - switch.great_room_back_wall_switch
+  - switch.foyer_outlet
+  - switch.kitchen_outlet
+  - switch.great_room_back_wall
 
 Alarm zones:
   - switch.zone_01_15
@@ -110,8 +111,8 @@ Automations:
 Christmas lights indoor:
   icon: mdi:lightbulb
   entities:
-    - switch.foyer_plug_switch
-    - switch.great_room_back_wall_switch
+    - switch.foyer_outlet
+    - switch.great_room_back_wall
 
 Christmas lights outdoor:
   icon: mdi:lightbulb

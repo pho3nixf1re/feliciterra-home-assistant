@@ -84,39 +84,33 @@ views:
         title: Outdoor lights
         show_header_toggle: false
         entities:
-          - switch.outdoor_garage_lights_switch
-          - switch.front_porch_lights_switch
-          - switch.back_porch_lights_switch
+          - switch.outdoor_garage_lights
+          - switch.front_porch_lights
+          - switch.back_porch_lights
       - type: entities
         title: Indoor lights
         show_header_toggle: false
         entities:
           - light.master_bedroom_lamp_level
-          - switch.great_room_center_lights_switch
+          - switch.great_room_entry_lights
+          - switch.great_room_center_lights
           - switch.great_room_window_lights
           - switch.pool_bathroom_tub_light
-          - switch.kitchen_cabinet_lights_switch
-          - switch.library_lights_switch
+          - switch.kitchen_cabinet_lights
+          - switch.library_lights
           - switch.office_light
-          - switch.mudroom_hallway_lights_switch
-          - switch.play_room_lights_switch
-          - switch.step_lights_switch
+          - switch.mudroom_hallway_lights
+          - switch.play_room_lights
+          - switch.step_lights
       - type: entities
         title: Outlets
         show_header_toggle: false
         entities:
-          - switch.foyer_plug_switch
-          - switch.kitchen_plug_switch
-          - switch.great_room_back_wall_switch
+          - switch.foyer_outlet
+          - switch.kitchen_outlet
+          - switch.great_room_back_wall
           - switch.library_outlet
           - switch.outdoor_outlet
-      # - type: entities
-      #   title: Climate control
-      #   show_header_toggle: false
-      #   entities:
-      #     - climate.th6220wf2006
-      #     - climate.th6220wf2006_2
-      #     - climate.th6220wf2006_3
       - type: entities
         title: Alarm zones
         show_header_toggle: false
@@ -181,6 +175,7 @@ views:
           - zwave.garage_door
           - zwave.miles_room_fan
           - zwave.master_bedroom_fan
+          - zwave.great_room_entry_lights
           - zwave.great_room_center_lights
           - zwave.great_room_window_lights
           - zwave.pool_bathroom_tub_light
