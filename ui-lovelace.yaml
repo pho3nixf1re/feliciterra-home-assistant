@@ -10,6 +10,7 @@ views:
       - type: entities
         entities:
           - binary_sensor.playroom_attic_door
+          - binary_sensor.pool_outside_door
       - type: entities
         title: Scenes
         show_header_toggle: false
