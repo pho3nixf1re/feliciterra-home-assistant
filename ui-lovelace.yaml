@@ -65,6 +65,7 @@ views:
         entities:
           - device_tracker.brooke_phone
           - device_tracker.matt_phone
+          - device_tracker.miles_tablet
           - device_tracker.kathy_phone
           - device_tracker.milton_phone
           - device_tracker.esther_phone
