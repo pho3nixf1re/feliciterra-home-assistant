@@ -138,6 +138,7 @@ views:
           - automation.wakeup_teardown
           - automation.evening
           - automation.before_sunset
+          - automation.daily_backup
       - type: entities
         title: Indoor fans
         show_header_toggle: false

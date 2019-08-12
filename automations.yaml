@@ -280,3 +280,13 @@
       entity_id:
         - switch.step_lights
         - switch.kitchen_cabinet_lights
+
+- id: daily_backup
+  alias: Daily Backup
+  trigger:
+    platform: time
+    at: '1:00:00'
+  action:
+  - service: hassio.addon_start
+    data:
+      addon: e54deb29_remote_backup
