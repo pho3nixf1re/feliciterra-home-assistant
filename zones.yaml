@@ -1,5 +1,5 @@
 - name: Home
-  latitude: !secret latitude_home
-  longitude: !secret longitude_home
+  latitude: !secret home_latitude
+  longitude: !secret home_latitude
   radius: 125
   icon: mdi:home-heart

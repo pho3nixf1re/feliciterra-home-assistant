@@ -109,9 +109,6 @@ unifi:
   controllers:
     - site: !secret unifi_site
       host: !secret unifi_host
-      port: 443
-      username: !secret unifi_username
-      password: !secret unifi_password
       detection_time: 300
 
 notify:
