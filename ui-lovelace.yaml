@@ -117,15 +117,20 @@ views:
         title: Alarm zones
         show_header_toggle: false
         entities:
-          - binary_sensor.zone_01_15
-          - binary_sensor.zone_02_16
-          - binary_sensor.zone_03_23
-          - binary_sensor.zone_04_18
-          - binary_sensor.zone_05_19
-          - binary_sensor.zone_06_20
-          - binary_sensor.zone_07_25
-          - binary_sensor.zone_08_26
-          - binary_sensor.zone_17_24
+          - binary_sensor.great_room_glass_break
+          - binary_sensor.guest_room_glass_break
+          - binary_sensor.office_glass_break
+          - binary_sensor.library_glass_break
+          - binary_sensor.master_bedroom_glass_break
+      - type: entities
+        title: Doors
+        show_header_toggle: false
+        entities:
+          - binary_sensor.playroom_attic_door
+          - binary_sensor.pool_outside_door
+          - binary_sensor.front_door
+          - binary_sensor.great_room_door
+          - binary_sensor.garage_inner_door
       - type: entities
         title: Automations
         show_header_toggle: false
@@ -188,6 +193,7 @@ views:
           - zwave.master_bedroom_lamp
           - zwave.mudroom_hallway_lights
           - zwave.outdoor_garage_lights
+          - zwave.front_porch_lights
           - zwave.play_room_lights
           - zwave.step_lights
       - type: entities
