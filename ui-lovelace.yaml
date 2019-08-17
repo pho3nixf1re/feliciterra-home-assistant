@@ -98,6 +98,7 @@ views:
           - switch.great_room_center_lights
           - switch.great_room_window_lights
           - switch.pool_bathroom_tub_light
+          - switch.kids_potty_light
           - switch.kitchen_cabinet_lights
           - switch.library_lights
           - switch.office_light
@@ -178,23 +179,24 @@ views:
         show_header_toggle: false
         entities:
           - zwave.back_porch_lights
-          - zwave.front_door
           - zwave.back_porch_lights
+          - zwave.front_door
+          - zwave.front_porch_lights
           - zwave.garage_door
-          - zwave.miles_room_fan
-          - zwave.master_bedroom_fan
-          - zwave.great_room_entry_lights
           - zwave.great_room_center_lights
+          - zwave.great_room_entry_lights
           - zwave.great_room_window_lights
-          - zwave.pool_bathroom_tub_light
+          - zwave.kids_potty_light
           - zwave.kitchen_cabinet_lights
           - zwave.library_lights
-          - zwave.office_light
+          - zwave.master_bedroom_fan
           - zwave.master_bedroom_lamp
+          - zwave.miles_room_fan
           - zwave.mudroom_hallway_lights
+          - zwave.office_light
           - zwave.outdoor_garage_lights
-          - zwave.front_porch_lights
           - zwave.play_room_lights
+          - zwave.pool_bathroom_tub_light
           - zwave.step_lights
       - type: entities
         title: Door locks
