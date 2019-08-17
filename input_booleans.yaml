@@ -8,12 +8,12 @@ away:
   initial: off
   icon: mdi:home-outline
 
-disable_door_timeouts:
-  name: Disable all door timeouts
+door_timeouts:
+  name: Door timeouts
   initial: off
   icon: mdi:lock-reset
-  
+
 christmas_time:
-  name: Is it Christmas time?
+  name: Christmas time
   initial: off
   icon: mdi:pine-tree

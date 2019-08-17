@@ -29,7 +29,7 @@ views:
         title: Home states
         show_header_toggle: false
         entities:
-          - input_boolean.disable_door_timeouts
+          - input_boolean.door_timeouts
           - input_boolean.away
       - type: entities
         title: Alarm
@@ -57,7 +57,7 @@ views:
         title: Home states
         show_header_toggle: false
         entities:
-          - input_boolean.disable_door_timeouts
+          - input_boolean.door_timeouts
           - input_boolean.away
           - input_boolean.christmas_time
       - type: entities
