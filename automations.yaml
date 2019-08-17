@@ -59,22 +59,24 @@
   trigger:
     platform: time
     at: '08:20:00'
-  condition:
-    condition: time
-    weekday:
-      - mon
-      - tue
-      - wed
-      - thu
-      - fri
   action:
-    service: homeassistant.turn_off
-    entity_id:
-      - switch.kitchen_cabinet_lights
-      - switch.mudroom_hallway_lights
-      - switch.step_lights
-      - switch.foyer_outlet
-      - light.master_bedroom_lamp_level
+    - service: homeassistant.turn_off
+      entity_id:
+        - switch.kids_potty_light
+    - condition: time
+      weekday:
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
+    - service: homeassistant.turn_off
+      entity_id:
+        - switch.kitchen_cabinet_lights
+        - switch.mudroom_hallway_lights
+        - switch.step_lights
+        - switch.foyer_outlet
+        - light.master_bedroom_lamp_level
 
 - id: evening
   alias: Evening
@@ -115,6 +117,7 @@
         - switch.library_outlet
         - switch.foyer_outlet
         - switch.miles_room_fan
+        - switch.kids_potty_light
     - service: light.turn_on
       data:
         entity_id:
@@ -129,11 +132,10 @@
     to: open
     for:
       minutes: 10
-  condition:
-    condition: state
-    entity_id: input_boolean.disable_door_timeouts
-    state: 'off'
   action:
+    - condition: state
+      entity_id: input_boolean.door_timeouts
+      state: 'off'
     - service: cover.close_cover
       entity_id: cover.left_door
 
@@ -145,11 +147,10 @@
     to: open
     for:
       minutes: 10
-  condition:
-    condition: state
-    entity_id: input_boolean.disable_door_timeouts
-    state: 'off'
   action:
+    - condition: state
+      entity_id: input_boolean.door_timeouts
+      state: 'off'
     - service: cover.close_cover
       entity_id: cover.right_door
 
@@ -161,11 +162,10 @@
     to: unlocked
     for:
       minutes: 10
-  condition:
-    condition: state
-    entity_id: input_boolean.disable_door_timeouts
-    state: 'off'
   action:
+    - condition: state
+      entity_id: input_boolean.door_timeouts
+      state: 'off'
     - service: lock.lock
       entity_id: lock.front_door
 
