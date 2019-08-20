@@ -208,7 +208,8 @@ views:
         entities:
           - zwave.front_door
           - zwave.garage_door
-  - icon: mdi:harddisk
+  - title: System monitoring
+    icon: mdi:harddisk
     cards:
       - type: history-graph
         title: System resources
