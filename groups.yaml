@@ -1,9 +1,9 @@
-Outdoor lights:
+outdoor lights:
   - switch.outdoor_garage_lights
   - switch.front_porch_lights
   - switch.back_porch_lights
 
-Indoor lights:
+indoor lights:
   - light.master_bedroom_lamp_level
   - switch.great_room_entry_lights
   - switch.great_room_center_lights
@@ -16,20 +16,13 @@ Indoor lights:
   - switch.step_lights
   - switch.office_light
 
-Christmas lights indoor:
+christmas lights indoor:
   icon: mdi:lightbulb
   entities:
     - switch.foyer_outlet
     - switch.great_room_back_wall
 
-Christmas lights outdoor:
+christmas lights outdoor:
   icon: mdi:lightbulb
   entities:
     - switch.outdoor_outlet
-
-Alarm:
-  control: hidden
-  entities:
-    - script.alarm_disarm
-    - script.alarm_arm
-    - script.alarm_stay
