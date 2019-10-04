@@ -13,7 +13,7 @@
     entity_id: input_boolean.away
     state: 'off'
   action:
-    - service: alarm_control_panel.alarm_arm_night
+    - service: alarm_control_panel.alarm_arm_home
 
 - id: wakeup
   alias: Wakeup
