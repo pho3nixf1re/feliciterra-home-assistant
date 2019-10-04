@@ -1,0 +1,59 @@
+# binary_sensor.zone_01_15:
+#   friendly_name: front door
+# binary_sensor.zone_02_16:
+#   friendly_name: pool bathroom door
+# binary_sensor.zone_03_23:
+#   friendly_name: back door
+# binary_sensor.zone_17_24:
+#   friendly_name: garage door
+# binary_sensor.zone_04_18:
+#   hidden: true
+#   friendly_name: great room glass break
+# binary_sensor.zone_05_19:
+#   hidden: true
+#   friendly_name: guest room glass break
+# binary_sensor.zone_06_20:
+#   hidden: true
+#   friendly_name: office glass break
+# binary_sensor.zone_07_25:
+#   hidden: true
+#   friendly_name: library glass break
+# binary_sensor.zone_08_26:
+#   hidden: true
+#   friendly_name: master bedroom glass break
+# switch.zone_01_15:
+#   friendly_name: front door
+# switch.zone_02_16:
+#   friendly_name: pool bathroom door
+# switch.zone_03_23:
+#   friendly_name: back door
+# switch.zone_04_18:
+#   friendly_name: great room glass break
+# switch.zone_05_19:
+#   friendly_name: guest room glass break
+# switch.zone_06_20:
+#   friendly_name: office glass break
+# switch.zone_07_25:
+#   friendly_name: library glass break
+# switch.zone_08_26:
+#   friendly_name: master bedroom glass break
+# switch.zone_17_24:
+#   friendly_name: garage door
+sun.sun:
+  hidden: true
+device_tracker.brooke_phone:
+  friendly_name: Brooke's phone
+device_tracker.matt_phone:
+  friendly_name: Matt's phone
+device_tracker.kathy_phone:
+  friendly_name: Kathy's phone
+device_tracker.milton_phone:
+  friendly_name: Milton's phone
+device_tracker.esther_phone:
+  friendly_name: Esther's phone
+climate.th6220wf2006:
+  friendly_name: playroom
+climate.th6220wf2006_2:
+  friendly_name: roll tide hall
+climate.th6220wf2006_3:
+  friendly_name: mudroom

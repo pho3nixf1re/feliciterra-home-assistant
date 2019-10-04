@@ -1,0 +1,11 @@
+sensor.front_door_*:
+  hidden: true
+sensor.garage_door_*:
+  hidden: true
+
+script.alarm_disarm:
+  icon: mdi:lock-open
+script.alarm_arm:
+  icon: mdi:lock
+script.alarm_stay:
+  icon: mdi:lock-outline

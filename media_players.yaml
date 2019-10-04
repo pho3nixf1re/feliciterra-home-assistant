@@ -1,0 +1,4 @@
+- name: great_room_tv
+  platform: vizio
+  host: !secret vizio_great_room_host
+  access_token: !secret vizio_great_room_token

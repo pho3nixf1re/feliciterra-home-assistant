@@ -1,0 +1,14 @@
+alarm_disarm:
+  alias: disarm
+  sequence:
+    - service: rest_command.alarm_disarm
+
+alarm_arm:
+  alias: arm away
+  sequence:
+    - service: rest_command.alarm_arm
+
+alarm_stay:
+  alias: arm stay
+  sequence:
+    - service: rest_command.alarm_stay

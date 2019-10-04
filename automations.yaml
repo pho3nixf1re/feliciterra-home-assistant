@@ -1,0 +1,282 @@
+- id: goodnight
+  alias: Goodnight
+  trigger:
+    platform: event
+    event_type: call_service
+    event_data:
+      service_data:
+        entity_id: scene.goodnight_house
+      domain: scene
+      service: turn_on
+  condition:
+    condition: state
+    entity_id: input_boolean.away
+    state: 'off'
+  action:
+    - service: rest_command.alarm_stay
+
+- id: wakeup
+  alias: Wakeup
+  trigger:
+    platform: time
+    at: '06:20:00'
+  condition:
+    condition: state
+    entity_id: input_boolean.away
+    state: 'off'
+  action:
+    - service: rest_command.alarm_disarm
+    - service: lock.unlock
+      entity_id: lock.garage_door
+    - service: homeassistant.turn_on
+      entity_id:
+        - switch.foyer_plug_switch
+    - service: homeassistant.turn_off
+      entity_id:
+        - switch.master_bedroom_fan
+        - switch.miles_room_fan
+    - condition: time
+      weekday:
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
+    - service: switch.turn_on
+      entity_id:
+        - switch.kitchen_cabinet_lights_switch
+        - switch.mudroom_hallway_lights_switch
+    - condition: sun
+      before: sunrise
+      before_offset: '-00:15:00'
+    - service: switch.turn_on
+      entity_id:
+        - switch.step_lights_switch
+        - switch.back_porch_lights_switch
+
+- id: wakeup_teardown
+  alias: Wakeup teardown
+  trigger:
+    platform: time
+    at: '08:20:00'
+  condition:
+    condition: time
+    weekday:
+      - mon
+      - tue
+      - wed
+      - thu
+      - fri
+  action:
+    service: homeassistant.turn_off
+    entity_id:
+      - switch.kitchen_cabinet_lights_switch
+      - switch.mudroom_hallway_lights_switch
+      - switch.step_lights_switch
+      - switch.foyer_plug_switch
+      - light.master_bedroom_lamp_level
+
+- id: evening
+  alias: Evening
+  trigger:
+    platform: time
+    at: '16:45:00'
+  condition:
+    condition: state
+    entity_id: input_boolean.away
+    state: 'off'
+  action:
+    - service: homeassistant.turn_on
+      entity_id:
+        - switch.kitchen_cabinet_lights_switch
+        - switch.library_outlet
+
+- id: sunrise
+  alias: Sunrise
+  trigger:
+    platform: sun
+    event: sunrise
+  action:
+    service: switch.turn_off
+    entity_id: group.outdoor_lights
+
+- id: before_sunset
+  alias: Before sunset
+  trigger:
+    platform: sun
+    event: sunset
+    offset: '-00:40:00'
+  action:
+    - service: homeassistant.turn_on
+      entity_id:
+        - group.outdoor_lights
+        - switch.step_lights_switch
+        - switch.back_porch_lights_switch
+        - switch.library_outlet
+        - switch.foyer_plug_switch
+        - switch.miles_room_fan
+    - service: light.turn_on
+      data:
+        entity_id:
+          - light.master_bedroom_lamp_level
+        brightness_pct: 100
+
+- id: left_garage_door_timeout
+  alias: Left garage door timeout
+  trigger:
+    platform: state
+    entity_id: cover.left_door
+    to: open
+    for:
+      minutes: 10
+  condition:
+    condition: state
+    entity_id: input_boolean.disable_door_timeouts
+    state: 'off'
+  action:
+    - service: cover.close_cover
+      entity_id: cover.left_door
+
+- id: right_garage_door_timeout
+  alias: Right garage door timeout
+  trigger:
+    platform: state
+    entity_id: cover.right_door
+    to: open
+    for:
+      minutes: 10
+  condition:
+    condition: state
+    entity_id: input_boolean.disable_door_timeouts
+    state: 'off'
+  action:
+    - service: cover.close_cover
+      entity_id: cover.right_door
+
+- id: front_door_lock_timeout
+  alias: Front door lock timeout
+  trigger:
+    platform: state
+    entity_id: lock.front_door
+    to: unlocked
+    for:
+      minutes: 10
+  condition:
+    condition: state
+    entity_id: input_boolean.disable_door_timeouts
+    state: 'off'
+  action:
+    - service: lock.lock
+      entity_id: lock.front_door
+
+- id: foyer_outlet_timeout
+  alias: Foyer outlet timeout
+  trigger:
+    platform: state
+    entity_id: switch.foyer_plug_switch
+    to: 'on'
+    for:
+      minutes: 120
+  action:
+    - service: homeassistant.turn_off
+      entity_id: switch.foyer_plug_switch
+
+- id: presence_leaving
+  alias: Leaving
+  trigger:
+    # Delayed action for router-based tracker to prevent false positives.
+    platform: state
+    entity_id:
+      - device_tracker.brooke_phone
+      - device_tracker.matt_phone
+      - device_tracker.milton_phone
+      - device_tracker.esther_phone
+      - device_tracker.kathy_phone
+    from: home
+    to: not_home
+  condition:
+    condition: and
+    conditions:
+      - condition: state
+        entity_id: input_boolean.away
+        state: 'off'
+      - condition: state
+        entity_id: device_tracker.brooke_phone
+        state: not_home
+      - condition: state
+        entity_id: device_tracker.matt_phone
+        state: not_home
+      - condition: state
+        entity_id: device_tracker.milton_phone
+        state: not_home
+      - condition: state
+        entity_id: device_tracker.esther_phone
+        state: not_home
+      - condition: state
+        entity_id: device_tracker.kathy_phone
+        state: not_home
+  action:
+    service: input_boolean.turn_on
+    entity_id: input_boolean.away
+
+- id: presence_returning
+  alias: arriving
+  trigger:
+    platform: state
+    entity_id:
+      - device_tracker.brooke_phone
+      - device_tracker.matt_phone
+      - device_tracker.milton_phone
+      - device_tracker.esther_phone
+      - device_tracker.kathy_phone
+    from: not_home
+    to: home
+  action:
+    - service: input_boolean.turn_off
+      entity_id: input_boolean.away
+
+- id: away_on
+  alias: Away on
+  trigger:
+    platform: state
+    entity_id: input_boolean.away
+    to: 'on'
+  action:
+    - service: rest_command.alarm_arm
+    - service: lock.lock
+      entity_id:
+        - lock.garage_door
+        - lock.front_door
+    - service: homeassistant.turn_off
+      entity_id:
+        - media_player.vizio_smartcast
+        - switch.mudroom_hallway_lights_switch
+        - switch.foyer_plug_switch
+        - switch.great_room_back_wall_switch
+        - switch.great_room_center_lights_switch
+        - switch.kitchen_cabinet_lights_switch
+    - service: cover.close_cover
+      entity_id:
+        - cover.left_door
+        - cover.right_door
+
+- id: away_off
+  alias: Away off
+  trigger:
+    platform: state
+    entity_id: input_boolean.away
+    to: 'off'
+  action:
+    - service: rest_command.alarm_disarm
+    - service: lock.unlock
+      entity_id: lock.garage_door
+    - service: homeassistant.turn_on
+      entity_id:
+        - switch.mudroom_hallway_lights_switch
+    - condition: sun
+      after: sunset
+      after_offset: '-00:15:00'
+    - service: homeassistant.turn_on
+      entity_id:
+        - switch.step_lights_switch
+        - switch.kitchen_cabinet_lights_switch

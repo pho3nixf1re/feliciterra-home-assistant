@@ -1,0 +1,15 @@
+
+- name: Goodnight house
+  entities:
+    lock.front_door: locked
+    lock.garage_door: locked
+    group.indoor_lights: off
+    group.outdoor_lights: off
+    group.garage_doors: closed
+    media_player.vizio_smartcast: off
+    switch.foyer_plug_switch: off
+    switch.back_porch_lights_switch: off
+    switch.master_bedroom_fan: on
+    switch.library_outlet: off
+    group.christmas_lights_indoor: off
+    group.christmas_lights_outdoor: off

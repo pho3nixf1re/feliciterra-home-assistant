@@ -1,0 +1,12 @@
+
+# scene 28
+alarm_disarm:
+  url: !secret vera_alarm_disarm
+
+# scene 27
+alarm_arm:
+  url: !secret vera_alarm_arm
+
+# scene 29
+alarm_stay:
+  url: !secret vera_alarm_stay

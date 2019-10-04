@@ -1,0 +1,19 @@
+# vacation:
+#   name: Vacation
+#   initial: off
+#   icon: mdi:beach
+
+away:
+  name: Away
+  initial: off
+  icon: mdi:home-outline
+
+disable_door_timeouts:
+  name: Disable all door timeouts
+  initial: off
+  icon: mdi:lock-reset
+  
+christmas_time:
+  name: Is it Christmas time?
+  initial: off
+  icon: mdi:pine-tree

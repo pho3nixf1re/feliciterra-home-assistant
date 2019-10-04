@@ -1,0 +1,132 @@
+default_view:
+  view: yes
+  name: Home
+  icon: mdi:home
+  entities:
+    # - group.weather_overview
+    - group.scenes
+    - group.home_states
+    - group.alarm
+    - binary_sensor.playroom_attic_door
+
+Everything:
+  view: yes
+  entities:
+    - group.presence
+    - group.doors
+    - group.garage_doors
+    - group.outdoor_lights
+    - group.indoor_lights
+    - group.outlets
+    - group.climate_control
+    - group.alarm_zones
+    - group.automations
+    - group.indoor_fans
+
+Indoor fans:
+  - switch.miles_room_fan
+  - switch.master_bedroom_fan
+
+Weather overview:
+  - sensor.pws_weather_1d
+  - sensor.pws_precip_1d
+  - sensor.pws_temp_high_1d_f
+  - sensor.pws_temp_low_1d_f
+  - sensor.pws_temp_f
+  - sensor.pws_feelslike_f
+  - sensor.pws_heat_index_f
+
+Doors:
+  - lock.front_door
+  - lock.garage_door
+
+Garage doors:
+  - cover.left_door
+  - cover.right_door
+
+Outdoor lights:
+  - switch.outdoor_garage_lights_switch
+  - switch.front_porch_lights_switch
+  - switch.back_porch_lights_switch
+
+Indoor lights:
+  - light.master_bedroom_lamp_level
+  - switch.great_room_center_lights_switch
+  - switch.great_room_window_lights
+  - switch.pool_bathroom_tub_light
+  - switch.kitchen_cabinet_lights_switch
+  - switch.library_lights_switch
+  - switch.mudroom_hallway_lights_switch
+  - switch.play_room_lights_switch
+  - switch.step_lights_switch
+  - switch.office_light
+
+Outlets:
+  - switch.foyer_plug_switch
+  - switch.kitchen_plug_switch
+  - switch.great_room_back_wall_switch
+
+Climate control:
+  - climate.th6220wf2006
+  - climate.th6220wf2006_2
+  - climate.th6220wf2006_3
+
+Alarm zones:
+  - switch.zone_01_15
+  - switch.zone_02_16
+  - switch.zone_03_23
+  - switch.zone_04_18
+  - switch.zone_05_19
+  - switch.zone_06_20
+  - switch.zone_07_25
+  - switch.zone_08_26
+  - switch.zone_17_24
+
+Door sensors:
+  - binary_sensor.zone_01_15
+  - binary_sensor.zone_02_16
+  - binary_sensor.zone_03_23
+  - binary_sensor.zone_17_24
+
+Presence:
+  - device_tracker.brooke_phone
+  - device_tracker.matt_phone
+  - device_tracker.kathy_phone
+  - device_tracker.esther_phone
+  - device_tracker.milton_phone
+
+Home states:
+  control: hidden
+  entities:
+    - input_boolean.disable_door_timeouts
+    - input_boolean.away
+
+Scenes:
+  - scene.goodnight_house
+
+Automations:
+  - automation.left_garage_door_timeout
+  - automation.right_garage_door_timeout
+  - automation.front_door_lock_timeout
+  - automation.leaving
+  - automation.arriving
+  - automation.wakeup
+  - automation.evening
+
+Christmas lights indoor:
+  icon: mdi:lightbulb
+  entities:
+    - switch.foyer_plug_switch
+    - switch.great_room_back_wall_switch
+
+Christmas lights outdoor:
+  icon: mdi:lightbulb
+  entities:
+    - switch.outdoor_outlet
+
+Alarm:
+  control: hidden
+  entities:
+    - script.alarm_disarm
+    - script.alarm_arm
+    - script.alarm_stay

@@ -1,0 +1,3 @@
+customize_domain:
+  automation:
+    initial_state: 'on'
