@@ -1,33 +1,23 @@
 homeassistant:
-  # Name of the location where Home Assistant is running
   name: Feliciterra
-  # Location required to calculate the time the sun rises and sets
   latitude: !secret home_latitude
   longitude: !secret home_longitude
-  # Impacts weather/sunrise data (altitude above sea level in meters)
   elevation: !secret home_elevation
-  # metric for Metric, imperial for Imperial
   unit_system: imperial
-  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: !secret home_time_zone
-  # Customization file
-  # customize: !include customize.yaml
   customize_glob: !include customize_glob.yaml
   customize_domain: !include customize_domain.yaml
 
 zone: !include zones.yaml
 
-# Enables the frontend
 frontend:
   themes: !include themes.yaml
 
 lovelace:
   mode: yaml
 
-# Enables configuration UI
 config:
 
-# Enables home assistant cloud
 cloud:
 
 http:
@@ -43,7 +33,6 @@ http:
 # For more information, please see:
 # https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
 updater:
-  # Optional, allows Home Assistant developers to focus on popular components.
   include_used_components: true
 
 system_health:
@@ -82,26 +71,17 @@ cover:
     password: !secret liftmaster_password
     type: liftmaster
 
-# Text to speech
 tts:
   - platform: google_translate
     service_name: google_say
     cache: true
     time_memory: 300
 
-vera:
-  vera_controller_url: !secret vera_controller_url
-
 zwave:
   usb_path: /dev/ttyACM0
   network_key: !secret zwave_network_key
   polling_interval: 60000
   device_config: !include zwave_device_config.yaml
-
-# TODO: fix usps integration, it's unstable
-# usps:
-#   username: !secret usps_username
-#   password: !secret usps_password
 
 media_player: !include media_players.yaml
 
@@ -122,6 +102,48 @@ group: !include groups.yaml
 scene: !include scenes.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
-rest_command: !include rest_commands.yaml
 
 input_boolean: !include input_booleans.yaml
+
+envisalink:
+  host: !secret envisalink_host
+  panel_type: DSC
+  user_name: !secret envisalink_user
+  password: !secret envisalink_password
+  code: !secret envisalink_code
+  port: 4025
+  evl_version: 4
+  keepalive_interval: 60
+  zonedump_interval: 30
+  timeout: 10
+  panic_type: Police
+  zones:
+    1:
+      name: 'Front door'
+      type: 'opening'
+    2:
+      name: 'Pool bathroom door'
+      type: 'opening'
+    3:
+      name: 'Back door'
+      type: 'opening'
+    4:
+      name: 'Great room glass break'
+      type: 'sound'
+    5:
+      name: 'Guest room glass break'
+      type: 'sound'
+    6:
+      name: 'Office glass break'
+      type: 'sound'
+    7:
+      name: 'Library glass break'
+      type: 'sound'
+    8:
+      name: 'Master bedroom glass break'
+    17:
+      name: 'Garage door'
+      type: 'opening'
+  partitions:
+    1:
+      name: 'Home Alarm'

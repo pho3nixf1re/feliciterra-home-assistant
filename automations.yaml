@@ -13,7 +13,7 @@
     entity_id: input_boolean.away
     state: 'off'
   action:
-    - service: rest_command.alarm_stay
+    - service: alarm_control_panel.alarm_arm_night
 
 - id: wakeup
   alias: Wakeup
@@ -25,7 +25,7 @@
     entity_id: input_boolean.away
     state: 'off'
   action:
-    - service: rest_command.alarm_disarm
+    - service: alarm_control_panel.alarm_disarm
     - service: lock.unlock
       entity_id: lock.garage_door
     - service: homeassistant.turn_on
@@ -242,7 +242,7 @@
     entity_id: input_boolean.away
     to: 'on'
   action:
-    - service: rest_command.alarm_arm
+    - service: alarm_control_panel.alarm_arm_away
     - service: lock.lock
       entity_id:
         - lock.garage_door
@@ -267,7 +267,7 @@
     entity_id: input_boolean.away
     to: 'off'
   action:
-    - service: rest_command.alarm_disarm
+    - service: alarm_control_panel.alarm_disarm
     - service: lock.unlock
       entity_id: lock.garage_door
     - service: homeassistant.turn_on

@@ -1,14 +1,14 @@
 alarm_disarm:
   alias: disarm
   sequence:
-    - service: rest_command.alarm_disarm
+    - service: alarm_control_panel.alarm_disarm
 
 alarm_arm:
   alias: arm away
   sequence:
-    - service: rest_command.alarm_arm
+    - service: alarm_control_panel.alarm_arm_away
 
 alarm_stay:
   alias: arm stay
   sequence:
-    - service: rest_command.alarm_stay
+    - service: alarm_control_panel.alarm_arm_home
