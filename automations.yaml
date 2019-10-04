@@ -209,12 +209,12 @@
       - condition: state
         entity_id: device_tracker.milton_phone
         state: not_home
-      - condition: state
-        entity_id: device_tracker.esther_phone
-        state: not_home
-      - condition: state
-        entity_id: device_tracker.kathy_phone
-        state: not_home
+      # - condition: state
+      #   entity_id: device_tracker.esther_phone
+      #   state: not_home
+      # - condition: state
+      #   entity_id: device_tracker.kathy_phone
+      #   state: not_home
   action:
     service: input_boolean.turn_on
     entity_id: input_boolean.away
