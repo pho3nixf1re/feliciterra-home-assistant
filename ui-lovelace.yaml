@@ -28,6 +28,8 @@ views:
         conditions:
           - entity: input_boolean.asleep
             state: 'off'
+          - entity: sun.sun
+            state: below_horizon
         card:
           type: entity-button
           icon: mdi:weather-night
