@@ -35,23 +35,6 @@ cards:
       show_name: false
       tap_action:
         action: toggle
-  - type: alarm-panel
-    entity: alarm_control_panel.home_alarm
-  - type: conditional
-    conditions:
-      - entity: input_boolean.christmas_time
-        state: "on"
-    card:
-      type: entities
-      entities:
-        - group.christmas_lights_indoor
-        - group.christmas_lights_outdoor
-  - type: entities
-    title: Home states
-    show_header_toggle: false
-    entities:
-      - input_boolean.door_timeouts
-      - input_boolean.away
   - type: entity-filter
     entities:
       - device_tracker.brooke_phone
@@ -65,3 +48,18 @@ cards:
     card:
       type: glance
       title: Who's home
+  - type: alarm-panel
+    entity: alarm_control_panel.home_alarm
+  - type: conditional
+    conditions:
+      - entity: input_boolean.christmas_time
+        state: "on"
+    card:
+      type: entities
+      entities:
+        - group.christmas_lights_indoor
+        - group.christmas_lights_outdoor
+  - type: entities
+    show_header_toggle: false
+    entities:
+      - input_boolean.door_timeouts
