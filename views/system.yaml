@@ -1,0 +1,10 @@
+title: System monitoring
+icon: mdi:harddisk
+cards:
+  - type: history-graph
+    title: System resources
+    entities:
+      - sensor.memory_use_percent
+      - sensor.disk_free
+  - type: gauge
+    entity: sensor.disk_use_percent

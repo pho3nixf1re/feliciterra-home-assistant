@@ -1,0 +1,68 @@
+title: Other stuff
+icon: mdi:all-inclusive
+cards:
+  - type: entities
+    title: Home states
+    show_header_toggle: false
+    entities:
+      - input_boolean.door_timeouts
+      - input_boolean.away
+      - input_boolean.christmas_time
+      - input_boolean.asleep
+  - type: entities
+    title: Device trackers
+    show_header_toggle: false
+    entities:
+      - device_tracker.brooke_phone
+      - device_tracker.matt_phone
+      - device_tracker.miles_tablet
+      - device_tracker.kacki_phone
+      - device_tracker.dally_phone
+      - device_tracker.milton_phone
+      # - device_tracker.esther_phone
+  - type: entities
+    title: Door locks
+    show_header_toggle: false
+    entities:
+      - lock.front_door
+      - lock.garage_door
+  - type: entities
+    title: Garage doors
+    show_header_toggle: false
+    entities:
+      - cover.left_door
+      - cover.right_door
+  - type: entities
+    title: Alarm zones
+    show_header_toggle: false
+    entities:
+      - binary_sensor.great_room_glass_break
+      - binary_sensor.guest_room_glass_break
+      - binary_sensor.office_glass_break
+      - binary_sensor.library_glass_break
+      - binary_sensor.master_bedroom_glass_break
+  - type: entities
+    title: Doors
+    show_header_toggle: false
+    entities:
+      - binary_sensor.playroom_attic_door
+      - binary_sensor.pool_outside_door
+      - binary_sensor.front_door
+      - binary_sensor.great_room_door
+      - binary_sensor.garage_inner_door
+  - type: entities
+    title: Automations
+    show_header_toggle: false
+    entities:
+      - automation.left_garage_door_timeout
+      - automation.right_garage_door_timeout
+      - automation.front_door_lock_timeout
+      - automation.arriving
+      - automation.leaving
+      - automation.goodnight
+      - automation.sunrise
+      - automation.wakeup
+      - automation.wakeup_teardown
+      - automation.evening
+      - automation.before_sunset
+      - automation.daily_backup
