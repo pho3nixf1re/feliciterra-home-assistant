@@ -237,6 +237,15 @@
     - service: input_boolean.turn_off
       entity_id: input_boolean.away
 
+- id: alarm_away
+  trigger:
+    platform: state
+    entity_id: alarm_control_panel.home_alarm
+    to: armed_away
+  action:
+    - service: input_boolean.turn_on
+      entity_id: input_boolean.away
+
 - id: away_on
   alias: Away on
   trigger:
