@@ -120,10 +120,11 @@
     to: open
     for:
       minutes: 10
+  condition:
+    condition: state
+    entity_id: input_boolean.door_timeouts
+    state: 'on'
   action:
-    - condition: state
-      entity_id: input_boolean.door_timeouts
-      state: 'off'
     - service: cover.close_cover
       entity_id: cover.left_door
 
@@ -135,10 +136,11 @@
     to: open
     for:
       minutes: 10
+  condition:
+    condition: state
+    entity_id: input_boolean.door_timeouts
+    state: 'on'
   action:
-    - condition: state
-      entity_id: input_boolean.door_timeouts
-      state: 'off'
     - service: cover.close_cover
       entity_id: cover.right_door
 
@@ -150,10 +152,11 @@
     to: unlocked
     for:
       minutes: 10
+  condition:
+    condition: state
+    entity_id: input_boolean.door_timeouts
+    state: 'on'
   action:
-    - condition: state
-      entity_id: input_boolean.door_timeouts
-      state: 'off'
     - service: lock.lock
       entity_id: lock.front_door
 
@@ -165,6 +168,10 @@
     to: 'on'
     for:
       minutes: 120
+  condition:
+    condition: state
+    entity_id: input_boolean.door_timeouts
+    state: 'on'
   action:
     - service: homeassistant.turn_off
       entity_id: switch.foyer_outlet
