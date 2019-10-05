@@ -56,9 +56,10 @@ views:
         entities:
           - device_tracker.brooke_phone
           - device_tracker.matt_phone
-          - device_tracker.kathy_phone
+          - device_tracker.kacki_phone
+          - device_tracker.dally_phone
           - device_tracker.milton_phone
-          - device_tracker.esther_phone
+          # - device_tracker.esther_phone
         state_filter:
           - home
         card:
@@ -123,9 +124,10 @@ views:
           - device_tracker.brooke_phone
           - device_tracker.matt_phone
           - device_tracker.miles_tablet
-          - device_tracker.kathy_phone
+          - device_tracker.kacki_phone
+          - device_tracker.dally_phone
           - device_tracker.milton_phone
-          - device_tracker.esther_phone
+          # - device_tracker.esther_phone
       - type: entities
         title: Door locks
         show_header_toggle: false

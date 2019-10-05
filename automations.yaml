@@ -185,8 +185,9 @@
       - device_tracker.brooke_phone
       - device_tracker.matt_phone
       - device_tracker.milton_phone
-      - device_tracker.esther_phone
-      - device_tracker.kathy_phone
+      # - device_tracker.esther_phone
+      - device_tracker.kacki_phone
+      - device_tracker.dally_phone
     from: home
     to: not_home
   condition:
@@ -207,9 +208,12 @@
       # - condition: state
       #   entity_id: device_tracker.esther_phone
       #   state: not_home
-      # - condition: state
-      #   entity_id: device_tracker.kathy_phone
-      #   state: not_home
+      - condition: state
+        entity_id: device_tracker.kacki_phone
+        state: not_home
+      - condition: state
+        entity_id: device_tracker.dally_phone
+        state: not_home
   action:
     service: input_boolean.turn_on
     entity_id: input_boolean.away
@@ -222,8 +226,9 @@
       - device_tracker.brooke_phone
       - device_tracker.matt_phone
       - device_tracker.milton_phone
-      - device_tracker.esther_phone
-      - device_tracker.kathy_phone
+      # - device_tracker.esther_phone
+      - device_tracker.kacki_phone
+      - device_tracker.dally_phone
     from: not_home
     to: home
   action:
