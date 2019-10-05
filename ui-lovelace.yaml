@@ -3,10 +3,16 @@ views:
   - title: Home
     icon: mdi:home
     cards:
-      - type: entities
+      - type: entity-filter
         entities:
           - binary_sensor.playroom_attic_door
-          - binary_sensor.pool_outside_door
+          - binary_sensor.pool_bathroom_door
+        state_filter:
+          - 'on'
+        show_empty: false
+        card:
+          type: glance
+          title: Door open
       - type: conditional
         conditions:
           - entity: input_boolean.asleep
@@ -29,6 +35,8 @@ views:
           show_name: false
           tap_action:
             action: toggle
+      - type: alarm-panel
+        entity: alarm_control_panel.home_alarm
       - type: conditional
         conditions:
           - entity: input_boolean.christmas_time
@@ -44,8 +52,6 @@ views:
         entities:
           - input_boolean.door_timeouts
           - input_boolean.away
-      - type: alarm-panel
-        entity: alarm_control_panel.home_alarm
       - type: entity-filter
         entities:
           - device_tracker.brooke_phone
