@@ -46,9 +46,9 @@ cards:
     show_header_toggle: false
     entities:
       - binary_sensor.playroom_attic_door
-      - binary_sensor.pool_outside_door
+      - binary_sensor.pool_bathroom_door
       - binary_sensor.front_door
-      - binary_sensor.great_room_door
+      - binary_sensor.back_door
       - binary_sensor.garage_inner_door
   - type: entities
     title: Automations
