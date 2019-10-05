@@ -1,5 +1,6 @@
 # Home Assistant files
 secrets.yaml
+ip_bans.yaml
 
 # Addons
 node-red

@@ -5,15 +5,16 @@
 
 away:
   name: Away
-  initial: off
   icon: mdi:home-outline
 
 door_timeouts:
   name: Door timeouts
-  initial: off
   icon: mdi:lock-reset
 
 christmas_time:
   name: Christmas time
-  initial: off
   icon: mdi:pine-tree
+
+asleep:
+  name: Asleep
+  icon: mdi:sleep

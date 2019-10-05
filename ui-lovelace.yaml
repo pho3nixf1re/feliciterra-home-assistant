@@ -7,11 +7,28 @@ views:
         entities:
           - binary_sensor.playroom_attic_door
           - binary_sensor.pool_outside_door
-      - type: entities
-        title: Scenes
-        show_header_toggle: false
-        entities:
-          - scene.goodnight_house
+      - type: conditional
+        conditions:
+          - entity: input_boolean.asleep
+            state: 'on'
+        card:
+          type: entity-button
+          icon: mdi:sleep
+          entity: input_boolean.asleep
+          show_name: false
+          tap_action:
+            action: toggle
+      - type: conditional
+        conditions:
+          - entity: input_boolean.asleep
+            state: 'off'
+        card:
+          type: entity-button
+          icon: mdi:weather-night
+          entity: input_boolean.asleep
+          show_name: false
+          tap_action:
+            action: toggle
       - type: conditional
         conditions:
           - entity: input_boolean.christmas_time
@@ -27,13 +44,8 @@ views:
         entities:
           - input_boolean.door_timeouts
           - input_boolean.away
-      - type: entities
-        title: Alarm
-        show_header_toggle: false
-        entities:
-          - script.alarm_disarm
-          - script.alarm_arm
-          - script.alarm_stay
+      - type: alarm-panel
+        entity: alarm_control_panel.home_alarm
       - type: entity-filter
         entities:
           - device_tracker.brooke_phone
@@ -97,6 +109,7 @@ views:
           - input_boolean.door_timeouts
           - input_boolean.away
           - input_boolean.christmas_time
+          - input_boolean.asleep
       - type: entities
         title: Device trackers
         show_header_toggle: false
@@ -146,6 +159,7 @@ views:
           - automation.front_door_lock_timeout
           - automation.arriving
           - automation.leaving
+          - automation.goodnight
           - automation.sunrise
           - automation.wakeup
           - automation.wakeup_teardown

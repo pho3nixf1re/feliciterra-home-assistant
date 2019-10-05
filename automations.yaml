@@ -1,19 +1,15 @@
 - id: goodnight
   alias: Goodnight
   trigger:
-    platform: event
-    event_type: call_service
-    event_data:
-      service_data:
-        entity_id: scene.goodnight_house
-      domain: scene
-      service: turn_on
+    platform: time
+    at: '22:38:23'
   condition:
     condition: state
     entity_id: input_boolean.away
-    state: 'off'
+    state: 'on'
   action:
-    - service: alarm_control_panel.alarm_arm_home
+    - service: input_boolean.turn_on
+      entity_id: input_boolean.asleep
 
 - id: wakeup
   alias: Wakeup
@@ -25,34 +21,26 @@
     entity_id: input_boolean.away
     state: 'off'
   action:
-    - service: alarm_control_panel.alarm_disarm
-    - service: lock.unlock
-      entity_id: lock.garage_door
-    - service: homeassistant.turn_on
-      entity_id:
-        - switch.foyer_outlet
-    - service: homeassistant.turn_off
-      entity_id:
-        - switch.master_bedroom_fan
-        - switch.miles_room_fan
-    - condition: time
-      weekday:
-        - mon
-        - tue
-        - wed
-        - thu
-        - fri
-    - service: switch.turn_on
-      entity_id:
-        - switch.kitchen_cabinet_lights
-        - switch.mudroom_hallway_lights
-    - condition: sun
-      before: sunrise
-      before_offset: '-00:15:00'
-    - service: switch.turn_on
-      entity_id:
-        - switch.step_lights
-        - switch.back_porch_lights
+    - service: input_boolean.turn_off
+      entity_id: input_boolean.asleep
+
+- id: asleep_on
+  trigger:
+    platform: state
+    entity_id: input_boolean.asleep
+    to: 'on'
+  action:
+    - service: script.turn_on
+      entity_id: script.goodnight
+
+- id: asleep_off
+  trigger:
+    platform: state
+    entity_id: input_boolean.asleep
+    to: 'off'
+  action:
+    - service: script.turn_on
+      entity_id: script.goodmorning
 
 - id: wakeup_teardown
   alias: Wakeup teardown

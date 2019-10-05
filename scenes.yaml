@@ -1,5 +1,5 @@
 
-- name: Goodnight house
+- name: Goodnight
   entities:
     lock.front_door: locked
     lock.garage_door: locked

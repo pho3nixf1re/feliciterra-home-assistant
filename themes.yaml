@@ -17,6 +17,7 @@ midnight:
   primary-background-color: '#383C45'
   secondary-background-color: '#383C45'
   divider-color: 'rgba(0, 0, 0, .12)'
+  card-background-color: 'var(--primary-background-color)'
 
   # Table rows
   table-row-background-color: '#353840'
