@@ -1,0 +1,14 @@
+platform: template
+sensors:
+  front_door_lock_battery:
+    friendly_name: Front door
+    device_class: battery
+    value_template: '{{ states.zwave.front_door.attributes.battery_level }}'
+  garage_door_lock_battery:
+    friendly_name: Garage door
+    device_class: battery
+    value_template: '{{ states.zwave.garage_door.attributes.battery_level }}'
+  playroom_attic_door_battery:
+    friendly_name: 'Playroom attic door'
+    device_class: battery
+    value_template: '{{ states.zwave.playroom_attic_door_sensor.attributes.battery_level }}'

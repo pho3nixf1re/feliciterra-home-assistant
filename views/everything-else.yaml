@@ -1,6 +1,13 @@
 title: Other stuff
 icon: mdi:all-inclusive
 cards:
+  - type: glance
+    title: Batteries
+    entities:
+      - entity: sensor.front_door_lock_battery
+      - entity: sensor.garage_door_lock_battery
+      - entity: sensor.playroom_attic_door_battery
+
   - type: entities
     title: Home states
     show_header_toggle: false
