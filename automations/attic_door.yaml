@@ -1,0 +1,14 @@
+alias: Notify attic door open
+trigger:
+  platform: state
+  entity_id: binary_sensor.playroom_attic_door
+  to: 'on'
+action:
+  - service: notify.webapp
+    data:
+      title: Attic door
+      message:
+        Attic door is open, you should go close it. Be sure to check for the
+        Kit.
+      data:
+        tag: attic-door-notification
