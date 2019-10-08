@@ -1,0 +1,19 @@
+alias: Away off
+trigger:
+  platform: state
+  entity_id: input_boolean.away
+  to: 'off'
+action:
+  - service: alarm_control_panel.alarm_disarm
+  - service: lock.unlock
+    entity_id: lock.garage_door
+  - service: homeassistant.turn_on
+    entity_id:
+      - switch.mudroom_hallway_lights
+  - condition: sun
+    after: sunset
+    after_offset: '-00:15:00'
+  - service: homeassistant.turn_on
+    entity_id:
+      - switch.step_lights
+      - switch.kitchen_cabinet_lights

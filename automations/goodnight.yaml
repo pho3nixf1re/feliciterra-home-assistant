@@ -1,0 +1,11 @@
+alias: Goodnight
+trigger:
+  platform: time
+  at: '22:38:23'
+condition:
+  condition: state
+  entity_id: input_boolean.away
+  state: 'on'
+action:
+  - service: input_boolean.turn_on
+    entity_id: input_boolean.asleep

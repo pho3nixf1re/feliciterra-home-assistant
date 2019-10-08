@@ -1,0 +1,15 @@
+alias: Arriving
+trigger:
+  platform: state
+  entity_id:
+    - device_tracker.brooke_phone
+    - device_tracker.matt_phone
+    - device_tracker.milton_phone
+    # - device_tracker.esther_phone
+    - device_tracker.kacki_phone
+    - device_tracker.dally_phone
+  from: not_home
+  to: home
+action:
+  - service: input_boolean.turn_off
+    entity_id: input_boolean.away

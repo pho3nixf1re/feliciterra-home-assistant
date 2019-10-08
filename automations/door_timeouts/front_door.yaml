@@ -1,0 +1,14 @@
+alias: Front door lock timeout
+trigger:
+  platform: state
+  entity_id: lock.front_door
+  to: unlocked
+  for:
+    minutes: 10
+condition:
+  condition: state
+  entity_id: input_boolean.door_timeouts
+  state: 'on'
+action:
+  - service: lock.lock
+    entity_id: lock.front_door

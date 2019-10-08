@@ -1,0 +1,14 @@
+alias: Foyer outlet timeout
+trigger:
+  platform: state
+  entity_id: switch.foyer_outlet
+  to: 'on'
+  for:
+    minutes: 120
+condition:
+  condition: state
+  entity_id: input_boolean.door_timeouts
+  state: 'on'
+action:
+  - service: homeassistant.turn_off
+    entity_id: switch.foyer_outlet

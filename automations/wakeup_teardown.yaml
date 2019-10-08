@@ -1,0 +1,22 @@
+alias: Wakeup teardown
+trigger:
+  platform: time
+  at: '08:20:00'
+action:
+  - service: homeassistant.turn_off
+    entity_id:
+      - switch.kids_potty_light
+  - condition: time
+    weekday:
+      - mon
+      - tue
+      - wed
+      - thu
+      - fri
+  - service: homeassistant.turn_off
+    entity_id:
+      - switch.kitchen_cabinet_lights
+      - switch.mudroom_hallway_lights
+      - switch.step_lights
+      - switch.foyer_outlet
+      - light.master_bedroom_lamp_level

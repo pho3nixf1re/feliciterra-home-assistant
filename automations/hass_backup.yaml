@@ -1,0 +1,8 @@
+alias: Home Assistant backup
+trigger:
+  platform: time
+  at: '1:00:00'
+action:
+- service: hassio.addon_start
+  data:
+    addon: e54deb29_remote_backup

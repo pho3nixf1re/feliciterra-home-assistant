@@ -1,0 +1,20 @@
+alias: Before sunset
+trigger:
+  platform: sun
+  event: sunset
+  offset: '-00:40:00'
+action:
+  - service: homeassistant.turn_on
+    entity_id:
+      - group.outdoor_lights
+      - switch.step_lights
+      - switch.back_porch_lights
+      - switch.library_outlet
+      - switch.foyer_outlet
+      - switch.miles_room_fan
+      - switch.kids_potty_light
+  - service: light.turn_on
+    data:
+      entity_id:
+        - light.master_bedroom_lamp_level
+      brightness_pct: 100

@@ -1,0 +1,14 @@
+alias: Right garage door timeout
+trigger:
+  platform: state
+  entity_id: cover.right_door
+  to: open
+  for:
+    minutes: 10
+condition:
+  condition: state
+  entity_id: input_boolean.door_timeouts
+  state: 'on'
+action:
+  - service: cover.close_cover
+    entity_id: cover.right_door
