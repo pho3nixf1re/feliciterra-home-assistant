@@ -1,3 +1,4 @@
+alias: Asleep off
 trigger:
   platform: state
   entity_id: input_boolean.asleep

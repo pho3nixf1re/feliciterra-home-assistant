@@ -72,4 +72,4 @@ cards:
       - automation.wakeup_teardown
       - automation.evening
       - automation.before_sunset
-      - automation.daily_backup
+      - automation.home_assistant_backup
