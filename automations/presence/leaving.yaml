@@ -8,6 +8,7 @@ trigger:
     # - device_tracker.esther_phone
     - device_tracker.kacki_phone
     - device_tracker.dally_phone
+    - device_tracker.housekeeper_phone
   from: home
   to: not_home
   # Delayed action for network devices to prevent false positives.
@@ -36,6 +37,9 @@ condition:
       state: not_home
     - condition: state
       entity_id: device_tracker.dally_phone
+      state: not_home
+    - condition: state
+      entity_id: device_tracker.housekeeper_phone
       state: not_home
 action:
   service: input_boolean.turn_on
