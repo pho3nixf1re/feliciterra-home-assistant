@@ -3,7 +3,7 @@ icon: mdi:home
 cards:
   - type: entity-filter
     entities:
-      - binary_sensor.playroom_attic_door
+      - binary_sensor.play_room_attic_door
       - binary_sensor.pool_bathroom_door
     state_filter:
       - 'on'

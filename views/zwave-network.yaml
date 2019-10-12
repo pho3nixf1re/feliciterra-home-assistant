@@ -19,7 +19,7 @@ cards:
     title: Sensors
     show_header_toggle: false
     entities:
-      - zwave.playroom_attic_door_sensor
+      - zwave.play_room_attic_door_sensor
   - type: entities
     title: Switches
     show_header_toggle: false

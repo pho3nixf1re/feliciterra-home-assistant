@@ -1,7 +1,7 @@
 alias: Notify attic door open
 trigger:
   platform: state
-  entity_id: binary_sensor.playroom_attic_door
+  entity_id: binary_sensor.play_room_attic_door
   to: 'on'
 action:
   - service: notify.webapp

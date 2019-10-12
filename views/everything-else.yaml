@@ -4,9 +4,9 @@ cards:
   - type: glance
     title: Batteries
     entities:
-      - entity: sensor.front_door_lock_battery
-      - entity: sensor.garage_door_lock_battery
-      - entity: sensor.playroom_attic_door_battery
+      - entity: sensor.front_door_battery_level
+      - entity: sensor.garage_door_battery_level
+      - entity: sensor.play_room_attic_door_battery_level
 
   - type: entities
     title: Home states
@@ -52,7 +52,7 @@ cards:
     title: Doors
     show_header_toggle: false
     entities:
-      - binary_sensor.playroom_attic_door
+      - binary_sensor.play_room_attic_door
       - binary_sensor.pool_bathroom_door
       - binary_sensor.front_door
       - binary_sensor.back_door
