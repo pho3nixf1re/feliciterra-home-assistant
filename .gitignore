@@ -2,6 +2,12 @@
 secrets.yaml
 ip_bans.yaml
 
+# Home Assistant custom components
+custom_components
+
+# Home Assistant themes, managed by HACS https://github.com/custom-components/hacs/
+themes
+
 # Addons
 node-red
 
