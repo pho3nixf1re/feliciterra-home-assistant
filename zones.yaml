@@ -3,3 +3,13 @@
   longitude: !secret home_latitude
   radius: 125
   icon: mdi:home-heart
+- name: Brooke work
+  latitude: !secret brooke_work_latitude
+  longitude: !secret brooke_work_longitude
+  radius: 300
+  icon: mdi:worker
+- name: School
+  latitude: !secret school_latitude
+  longitude: !secret school_longitude
+  radius: 400
+  icon: mdi:school

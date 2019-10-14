@@ -97,3 +97,7 @@ script: !include scripts.yaml
 input_boolean: !include input_booleans.yaml
 
 envisalink: !include envisalink.yaml
+
+owntracks:
+  max_gps_accuracy: 150
+  secret: !secret owntracks_key
