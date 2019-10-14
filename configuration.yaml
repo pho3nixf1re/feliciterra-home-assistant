@@ -39,6 +39,11 @@ system_health:
 
 system_log:
 
+logger:
+  default: warn
+  # logs:
+  #   custom_components.hacs: debug
+
 hassio:
 
 discovery:
