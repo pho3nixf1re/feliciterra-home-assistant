@@ -5,3 +5,7 @@ views:
   - !include views/everything-else.yaml
   - !include views/zwave-network.yaml
   - !include views/system.yaml
+
+resources:
+  - url: /community_plugin/monster-card/monster-card.js
+    type: js

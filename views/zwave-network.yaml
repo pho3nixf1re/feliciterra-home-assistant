@@ -1,53 +1,13 @@
 title: Z-Wave status
 icon: mdi:z-wave
 cards:
-  - type: entities
-    title: HUB
-    show_header_toggle: false
-    entities:
-      - zwave.hub
-  - type: entities
-    title: Outlets
-    show_header_toggle: false
-    entities:
-      - zwave.foyer_plug
-      - zwave.kitchen_plug
-      - zwave.great_room_back_wall
-      - zwave.outdoor_outlet
-      - zwave.library_outlet
-  - type: entities
-    title: Sensors
-    show_header_toggle: false
-    entities:
-      - zwave.play_room_attic_door_sensor
-  - type: entities
-    title: Switches
-    show_header_toggle: false
-    entities:
-      - zwave.back_porch_lights
-      - zwave.back_porch_lights
-      - zwave.front_door
-      - zwave.front_porch_lights
-      - zwave.garage_door
-      - zwave.great_room_center_lights
-      - zwave.great_room_entry_lights
-      - zwave.great_room_window_lights
-      - zwave.kids_potty_light
-      - zwave.kitchen_cabinet_lights
-      - zwave.kitchen_pantry_lights
-      - zwave.library_lights
-      - zwave.master_bedroom_fan
-      - zwave.master_bedroom_lamp
-      - zwave.miles_room_fan
-      - zwave.mudroom_hallway_lights
-      - zwave.office_light
-      - zwave.outdoor_garage_lights
-      - zwave.play_room_lights
-      - zwave.pool_bathroom_tub_light
-      - zwave.step_lights
-  - type: entities
-    title: Door locks
-    show_header_toggle: false
-    entities:
-      - zwave.front_door
-      - zwave.garage_door
+  - type: custom:monster-card
+    card:
+      type: entities
+      title: Devices not ready
+      show_header_toggle: false
+    filter:
+      include:
+        - domain: zwave
+      exclude:
+        - state: ready
