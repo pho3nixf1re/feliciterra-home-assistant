@@ -18,6 +18,7 @@ cards:
       - switch.pool_bathroom_tub_light
       - switch.kids_potty_light
       - switch.kitchen_cabinet_lights
+      - switch.kitchen_pantry_lights
       - switch.library_lights
       - switch.office_light
       - switch.mudroom_hallway_lights

@@ -34,6 +34,7 @@ cards:
       - zwave.great_room_window_lights
       - zwave.kids_potty_light
       - zwave.kitchen_cabinet_lights
+      - zwave.kitchen_pantry_lights
       - zwave.library_lights
       - zwave.master_bedroom_fan
       - zwave.master_bedroom_lamp
