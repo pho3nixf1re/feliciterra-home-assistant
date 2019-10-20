@@ -8,4 +8,5 @@
 - zwscene.xml
 - options.xml
 - custom_components/hacs
+- www
 - node-red
