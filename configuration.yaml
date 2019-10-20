@@ -61,6 +61,8 @@ sun:
 
 sensor: !include_dir_list sensors
 
+binary_sensor: !include_dir_list binary_sensors
+
 cover:
   - platform: myq
     username: !secret liftmaster_username
@@ -102,6 +104,8 @@ script: !include scripts.yaml
 input_boolean: !include input_booleans.yaml
 
 envisalink: !include envisalink.yaml
+
+rest_command: !include_dir_named rest_commands
 
 owntracks:
   max_gps_accuracy: 150

@@ -1,0 +1,10 @@
+url: !secret dnsimple_dns_update_url
+method: POST
+content_type: application/json
+headers:
+  authorization: !secret dnsimple_token
+  accept: application/json
+payload: >-
+  {
+    "content": "{{ states('sensor.myip') }}"
+  }

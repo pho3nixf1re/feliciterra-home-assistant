@@ -1,0 +1,6 @@
+platform: template
+sensors:
+  ip_changed:
+    friendly_name: "IP address changed"
+    value_template: >-
+      {{ states('sensor.homeassistant_feliciterra_com') != states('sensor.myip') }}

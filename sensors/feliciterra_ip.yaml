@@ -1,0 +1,3 @@
+platform: dnsip
+hostname: homeassistant.feliciterra.com
+resolver: 8.8.8.8
