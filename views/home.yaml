@@ -24,6 +24,17 @@ cards:
         action: toggle
   - type: conditional
     conditions:
+      - entity: binary_sensor.nas
+        state: 'off'
+    card:
+      type: entity-button
+      icon: mdi:server-off
+      entity: binary_sensor.nas
+      name: NAS server offline
+      tap_action:
+        action: more-info
+  - type: conditional
+    conditions:
       - entity: input_boolean.asleep
         state: 'off'
       - entity: sun.sun
