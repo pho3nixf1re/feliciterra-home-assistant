@@ -19,5 +19,5 @@ action:
       - switch.kitchen_cabinet_lights
   - service: cover.close_cover
     entity_id:
-      - cover.left_door
-      - cover.right_door
+      - cover.garage_door_left
+      - cover.garage_door_right
