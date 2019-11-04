@@ -1,0 +1,9 @@
+alias: Update IP
+trigger:
+  platform: state
+  entity_id: binary_sensor.ip_changed
+  to: 'on'
+action:
+  - service: rest_command.update_ip
+    data_template:
+      ip_address: "{{ states('sensor.myip') }}"

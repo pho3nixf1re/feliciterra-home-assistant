@@ -6,5 +6,5 @@ headers:
   accept: application/json
 payload: >-
   {
-    "content": "{{ states('sensor.myip') }}"
+    "content": "{{ ip_address }}"
   }
