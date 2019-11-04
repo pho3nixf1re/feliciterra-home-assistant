@@ -10,4 +10,5 @@ action:
   - service: homeassistant.turn_on
     entity_id:
       - switch.kitchen_cabinet_lights
+      - switch.kitchen_pantry_lights
       - switch.library_outlet

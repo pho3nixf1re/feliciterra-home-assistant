@@ -24,6 +24,7 @@ goodmorning:
       data:
         entity_id:
         - switch.kitchen_cabinet_lights
+        - switch.kitchen_pantry_lights
         - switch.mudroom_hallway_lights
     - condition: sun
       before: sunrise
