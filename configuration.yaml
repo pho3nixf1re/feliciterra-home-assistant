@@ -96,7 +96,7 @@ notify:
     vapid_prv_key: !secret vapid_prv_key
     vapid_email: !secret vapid_email
 
-group: !include groups.yaml
+group: !include_dir_named groups
 scene: !include scenes.yaml
 automation: !include_dir_list automations
 script: !include scripts.yaml

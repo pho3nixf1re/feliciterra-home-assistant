@@ -11,5 +11,5 @@
     switch.back_porch_lights: off
     switch.master_bedroom_fan: on
     switch.library_outlet: off
-    group.christmas_lights_indoor: off
-    group.christmas_lights_outdoor: off
+    group.indoor_christmas_lights: off
+    group.outdoor_christmas_lights: off

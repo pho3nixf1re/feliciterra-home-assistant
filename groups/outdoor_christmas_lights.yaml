@@ -1,0 +1,4 @@
+name: Outdoor Christmas lights
+icon: mdi:lightbulb
+entities:
+  - switch.outdoor_outlet

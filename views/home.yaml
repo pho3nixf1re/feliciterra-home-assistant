@@ -68,8 +68,8 @@ cards:
     card:
       type: entities
       entities:
-        - group.christmas_lights_indoor
-        - group.christmas_lights_outdoor
+        - group.indoor_christmas_lights
+        - group.outdoor_christmas_lights
   - type: entities
     show_header_toggle: false
     entities:
