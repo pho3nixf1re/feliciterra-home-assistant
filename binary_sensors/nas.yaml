@@ -2,4 +2,4 @@ platform: ping
 name: nas
 host: 10.0.0.110
 count: 2
-scan_interval: 60
+scan_interval: 15

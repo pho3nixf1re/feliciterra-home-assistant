@@ -1,0 +1,15 @@
+alias: Evening
+trigger:
+  platform: state
+  entity_id: binary_sensor.nas
+  to: 'off'
+  for:
+    seconds: 15
+action:
+  - service: notify.webapp
+    data:
+      title: Attic door
+      message:
+        NAS is offline. Please power cycle the hardware.
+      data:
+        tag: nas-offline-notification
