@@ -1,7 +1,7 @@
 title: Z-Wave status
 icon: mdi:z-wave
 cards:
-  - type: custom:monster-card
+  - type: custom:auto-entites
     card:
       type: entities
       title: Devices not ready
