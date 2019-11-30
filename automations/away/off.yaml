@@ -16,3 +16,4 @@ action:
     entity_id:
       - switch.step_lights
       - switch.kitchen_cabinet_lights
+      - script.christmas_on

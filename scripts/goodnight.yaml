@@ -3,3 +3,5 @@ sequence:
   - service: scene.turn_on
     data:
       entity_id: scene.goodnight
+  - service: script.turn_on
+    entity_id: script.christmas_off

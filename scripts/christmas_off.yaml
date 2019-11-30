@@ -1,0 +1,8 @@
+sequence:
+  - condition: state
+    entity_id: input_boolean.christmas_time
+    state: 'on'
+  - service: homeassistant.turn_off
+    entity_id:
+      - group.outdoor_christmas_lights
+      - group.indoor_christmas_lights

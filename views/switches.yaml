@@ -33,6 +33,7 @@ cards:
       - switch.great_room_back_wall
       - switch.library_outlet
       - switch.outdoor_outlet
+      - switch.outdoor_outlet_2
   - type: entities
     title: Outdoor lights
     show_header_toggle: false
