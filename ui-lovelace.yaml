@@ -7,5 +7,5 @@ views:
   - !include views/system.yaml
 
 resources:
-  - url: /community_plugin/auto-entities/auto-entities.js
+  - url: /community_plugin/lovelace-auto-entities/auto-entities.js
     type: module
