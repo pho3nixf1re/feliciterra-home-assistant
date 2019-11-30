@@ -1,0 +1,5 @@
+sequence:
+  - service: alarm_control_panel.alarm_arm_home
+  - service: scene.turn_on
+    data:
+      entity_id: scene.goodnight

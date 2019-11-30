@@ -99,7 +99,7 @@ notify:
 group: !include_dir_named groups
 scene: !include scenes.yaml
 automation: !include_dir_list automations
-script: !include scripts.yaml
+script: !include_dir_named scripts
 
 input_boolean: !include input_booleans.yaml
 
