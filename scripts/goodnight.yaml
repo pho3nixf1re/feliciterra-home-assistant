@@ -1,7 +1,6 @@
 sequence:
   - service: alarm_control_panel.alarm_arm_home
-  - service: scene.turn_on
-    data:
-      entity_id: scene.goodnight
-  - service: script.turn_on
-    entity_id: script.christmas_off
+  - service: homeassistant.turn_on
+    entity_id:
+      - scene.goodnight
+      - script.all_christmas_off

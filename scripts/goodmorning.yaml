@@ -7,7 +7,7 @@ sequence:
     data:
       entity_id:
         - switch.foyer_outlet
-        - script.christmas_on
+        - script.indoor_christmas_on
   - service: homeassistant.turn_off
     data:
       entity_id:
