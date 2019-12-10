@@ -7,8 +7,8 @@ trigger:
     minutes: 120
 condition:
   condition: state
-  entity_id: input_boolean.door_timeouts
-  state: 'on'
+  entity_id: input_boolean.christmas_time
+  state: 'off'
 action:
   - service: homeassistant.turn_off
     entity_id: switch.foyer_outlet
