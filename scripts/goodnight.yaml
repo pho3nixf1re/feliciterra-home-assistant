@@ -1,5 +1,6 @@
 sequence:
   - service: alarm_control_panel.alarm_arm_home
+    entity_id: alarm_control_panel.home_alarm
   - service: homeassistant.turn_on
     entity_id:
       - scene.goodnight
