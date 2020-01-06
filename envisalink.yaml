@@ -37,6 +37,9 @@ zones:
   17:
     name: 'Garage inner door'
     type: 'opening'
+  18:
+    name: 'Fire detectors'
+    type: 'smoke'
 partitions:
   1:
     name: 'Home Alarm'
