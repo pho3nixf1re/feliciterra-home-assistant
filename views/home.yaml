@@ -24,6 +24,17 @@ cards:
         action: toggle
   - type: conditional
     conditions:
+      - entity: binary_sensor.fire_detectors
+        state: 'on'
+    card:
+      type: entity-button
+      icon: mdi:fire
+      entity: binary_sensor.fire_detectors
+      name: Fire has been detected
+      tap_action:
+        action: none
+  - type: conditional
+    conditions:
       - entity: binary_sensor.nas
         state: 'off'
     card:

@@ -48,6 +48,7 @@ cards:
       - binary_sensor.office_glass_break
       - binary_sensor.library_glass_break
       - binary_sensor.master_bedroom_glass_break
+      - binary_sensor.fire_detectors
   - type: entities
     title: Doors
     show_header_toggle: false
