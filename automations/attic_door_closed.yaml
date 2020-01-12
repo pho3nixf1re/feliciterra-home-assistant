@@ -1,0 +1,10 @@
+alias: Notify attic door open
+trigger:
+  platform: state
+  entity_id: binary_sensor.play_room_attic_door
+  to: 'off'
+action:
+  - service: html5.dismiss
+    data:
+      data:
+        tag: attic-door-notification
