@@ -12,7 +12,7 @@ action:
       - lock.front_door
   - service: homeassistant.turn_off
     entity_id:
-      - media_player.vizio_smartcast
+      - media_player.great_room_tv
       - switch.mudroom_hallway_lights
       - switch.foyer_outlet
       - switch.great_room_back_wall

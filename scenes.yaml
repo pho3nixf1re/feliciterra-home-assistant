@@ -6,7 +6,7 @@
     group.indoor_lights: off
     group.outdoor_lights: off
     group.garage_doors: closed
-    media_player.vizio_smartcast: off
+    media_player.great_room_tv: off
     switch.foyer_outlet: off
     switch.back_porch_lights: off
     switch.master_bedroom_fan: on
