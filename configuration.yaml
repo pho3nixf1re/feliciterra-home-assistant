@@ -110,3 +110,6 @@ rest_command: !include_dir_named rest_commands
 owntracks:
   max_gps_accuracy: 150
   secret: !secret owntracks_key
+
+auto_backup:
+  auto_purge: true
