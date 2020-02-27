@@ -27,6 +27,8 @@ http:
   ip_ban_enabled: true
   login_attempts_threshold: 5
 
+mobile_app:
+
 # Checks for available updates
 # Note: This component will send some information about your system to
 # the developers to assist with development of Home Assistant.
@@ -106,10 +108,6 @@ input_boolean: !include input_booleans.yaml
 envisalink: !include envisalink.yaml
 
 rest_command: !include_dir_named rest_commands
-
-owntracks:
-  max_gps_accuracy: 150
-  secret: !secret owntracks_key
 
 auto_backup:
   auto_purge: true
