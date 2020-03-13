@@ -20,8 +20,8 @@ cards:
     title: Device trackers
     show_header_toggle: false
     entities:
-      - device_tracker.brooke_phone
-      - device_tracker.matt_phone
+      - person.brooke_turney
+      - person.matthew_turney
       - device_tracker.miles_tablet
       - device_tracker.kacki_phone
       - device_tracker.dally_phone

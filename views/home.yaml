@@ -59,8 +59,8 @@ cards:
         action: toggle
   - type: entity-filter
     entities:
-      - device_tracker.brooke_phone
-      - device_tracker.matt_phone
+      - person.brooke_turney
+      - person.matthew_turney
       - device_tracker.kacki_phone
       - device_tracker.dally_phone
       - device_tracker.milton_phone

@@ -2,8 +2,8 @@ alias: Arriving
 trigger:
   platform: state
   entity_id:
-    - device_tracker.brooke_phone
-    - device_tracker.matt_phone
+    - person.brooke_turney
+    - person.matthew_turney
     - device_tracker.milton_phone
     # - device_tracker.esther_phone
     - device_tracker.kacki_phone
