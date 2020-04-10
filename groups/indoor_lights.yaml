@@ -13,3 +13,4 @@ entities:
   - switch.play_room_lights
   - switch.step_lights
   - switch.office_light
+  - switch.office_desk_lamp

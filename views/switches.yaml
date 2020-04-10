@@ -21,6 +21,7 @@ cards:
       - switch.kitchen_pantry_lights
       - switch.library_lights
       - switch.office_light
+      - switch.office_desk_lamp
       - switch.mudroom_hallway_lights
       - switch.play_room_lights
       - switch.step_lights

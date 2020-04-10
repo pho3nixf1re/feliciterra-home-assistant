@@ -14,6 +14,7 @@ action:
       - switch.miles_room_fan
       - switch.kids_potty_light
       - script.all_christmas_on
+      - switch.office_desk_lamp
   - service: light.turn_on
     data:
       entity_id:
