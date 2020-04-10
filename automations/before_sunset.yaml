@@ -20,3 +20,6 @@ action:
       entity_id:
         - light.master_bedroom_lamp_level
       brightness_pct: 100
+  - service: homeassistant.turn_off
+    entity_id:
+      - switch.office_light
