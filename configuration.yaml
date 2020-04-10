@@ -88,12 +88,6 @@ zwave:
 
 media_player: !include media_players.yaml
 
-unifi:
-  controllers:
-    - site: !secret unifi_site
-      host: !secret unifi_host
-      detection_time: 300
-
 notify:
   - name: webapp
     platform: html5
