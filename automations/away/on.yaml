@@ -21,8 +21,8 @@ action:
       - switch.kitchen_cabinet_lights
   - service: cover.close_cover
     entity_id:
-      - cover.garage_door_left
-      - cover.garage_door_right
+      - cover.left_garage_door
+      - cover.right_garage_door
   - condition: state
     entity_id: input_boolean.christmas_time
     state: 'on'

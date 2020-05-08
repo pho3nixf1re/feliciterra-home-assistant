@@ -37,8 +37,8 @@ cards:
     title: Garage doors
     show_header_toggle: false
     entities:
-      - cover.garage_door_left
-      - cover.garage_door_right
+      - cover.left_garage_door
+      - cover.right_garage_door
   - type: entities
     title: Alarm zones
     show_header_toggle: false

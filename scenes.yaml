@@ -3,9 +3,10 @@
   entities:
     lock.front_door: locked
     lock.garage_door: locked
+    cover.left_garage_door: closed
+    cover.right_garage_door: closed
     group.indoor_lights: off
     group.outdoor_lights: off
-    group.garage_doors: closed
     media_player.great_room_tv: off
     switch.foyer_outlet: off
     switch.back_porch_lights: off

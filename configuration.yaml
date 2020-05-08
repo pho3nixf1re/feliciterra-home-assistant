@@ -68,12 +68,6 @@ sensor: !include_dir_list sensors
 
 binary_sensor: !include_dir_list binary_sensors
 
-cover:
-  - platform: myq
-    username: !secret liftmaster_username
-    password: !secret liftmaster_password
-    type: liftmaster
-
 tts:
   - platform: google_translate
     service_name: google_say

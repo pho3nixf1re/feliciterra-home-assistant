@@ -1,7 +1,7 @@
 alias: Left garage door timeout
 trigger:
   platform: state
-  entity_id: cover.garage_door_left
+  entity_id: cover.left_garage_door
   to: open
   for:
     minutes: 10
@@ -11,4 +11,4 @@ condition:
   state: 'on'
 action:
   - service: cover.close_cover
-    entity_id: cover.garage_door_left
+    entity_id: cover.left_garage_door
