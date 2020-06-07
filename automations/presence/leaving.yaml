@@ -4,11 +4,10 @@ trigger:
   entity_id:
     - person.brooke_turney
     - person.matthew_turney
-    - device_tracker.milton_phone
-    # - device_tracker.esther_phone
-    - device_tracker.kacki_phone
-    - device_tracker.dally_phone
-    - device_tracker.housekeeper_phone
+    - person.dally
+    - person.kacky
+    - person.esther_turney
+    - person.milton_turney
   from: home
   to: not_home
   # Delayed action for network devices to prevent false positives.
@@ -25,21 +24,6 @@ condition:
       state: not_home
     - condition: state
       entity_id: person.matthew_turney
-      state: not_home
-    - condition: state
-      entity_id: device_tracker.milton_phone
-      state: not_home
-    # - condition: state
-    #   entity_id: device_tracker.esther_phone
-    #   state: not_home
-    - condition: state
-      entity_id: device_tracker.kacki_phone
-      state: not_home
-    - condition: state
-      entity_id: device_tracker.dally_phone
-      state: not_home
-    - condition: state
-      entity_id: device_tracker.housekeeper_phone
       state: not_home
 action:
   service: input_boolean.turn_on

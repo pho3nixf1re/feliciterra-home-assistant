@@ -61,10 +61,10 @@ cards:
     entities:
       - person.brooke_turney
       - person.matthew_turney
-      - device_tracker.kacki_phone
-      - device_tracker.dally_phone
-      - device_tracker.milton_phone
-      # - device_tracker.esther_phone
+      - person.dally
+      - person.kacky
+      - person.esther_turney
+      - person.milton_turney
     state_filter:
       - home
     card:

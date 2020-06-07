@@ -17,17 +17,6 @@ cards:
       - input_boolean.christmas_time
       - input_boolean.asleep
   - type: entities
-    title: Device trackers
-    show_header_toggle: false
-    entities:
-      - person.brooke_turney
-      - person.matthew_turney
-      - device_tracker.miles_tablet
-      - device_tracker.kacki_phone
-      - device_tracker.dally_phone
-      - device_tracker.milton_phone
-      # - device_tracker.esther_phone
-  - type: entities
     title: Door locks
     show_header_toggle: false
     entities:

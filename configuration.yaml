@@ -5,6 +5,7 @@ homeassistant:
   elevation: !secret home_elevation
   unit_system: imperial
   time_zone: !secret home_time_zone
+  customize: !include customize.yaml
   customize_glob: !include customize_glob.yaml
   customize_domain: !include customize_domain.yaml
 
