@@ -36,7 +36,7 @@ cards:
       - binary_sensor.guest_room_glass_break
       - binary_sensor.office_glass_break
       - binary_sensor.library_glass_break
-      - binary_sensor.master_bedroom_glass_break
+      - binary_sensor.main_bedroom_glass_break
       - binary_sensor.fire_detectors
   - type: entities
     title: Doors

@@ -20,4 +20,4 @@ action:
       - switch.mudroom_hallway_lights
       - switch.step_lights
       - switch.foyer_outlet
-      - light.master_bedroom_lamp
+      - light.main_bedroom_lamp

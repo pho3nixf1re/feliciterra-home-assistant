@@ -18,7 +18,7 @@ action:
   - service: light.turn_on
     data:
       entity_id:
-        - light.master_bedroom_lamp
+        - light.main_bedroom_lamp
       brightness_pct: 100
   - service: homeassistant.turn_off
     entity_id:

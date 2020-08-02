@@ -12,7 +12,7 @@ sequence:
   - service: homeassistant.turn_off
     data:
       entity_id:
-        - switch.master_bedroom_fan
+        - switch.main_bedroom_fan
         - switch.miles_room_fan
   - condition: time
     weekday:

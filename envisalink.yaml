@@ -32,7 +32,7 @@ zones:
     name: 'Library glass break'
     type: sound
   8:
-    name: 'Master bedroom glass break'
+    name: 'Main bedroom glass break'
     type: sound
   17:
     name: 'Garage inner door'
