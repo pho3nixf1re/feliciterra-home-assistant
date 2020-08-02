@@ -1,5 +1,0 @@
-# Dead zwave device that cannot be removed. Possible to replace it in the future
-# but it cannot be removed.
-light.unknown_node_23_level:
-  ignored: true
-  polling_intensity: 0

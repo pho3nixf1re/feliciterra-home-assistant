@@ -75,12 +75,6 @@ tts:
     cache: true
     time_memory: 300
 
-zwave:
-  usb_path: !secret zwave_mount
-  network_key: !secret zwave_network_key
-  polling_interval: 60000
-  device_config: !include zwave_device_config.yaml
-
 media_player: !include media_players.yaml
 
 notify:
