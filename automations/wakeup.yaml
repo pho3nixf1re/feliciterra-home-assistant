@@ -2,10 +2,6 @@ alias: Wakeup
 trigger:
   platform: time
   at: '06:20:00'
-condition:
-  condition: state
-  entity_id: input_boolean.away
-  state: 'off'
 action:
   - service: input_boolean.turn_off
     entity_id: input_boolean.asleep
