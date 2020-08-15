@@ -55,7 +55,6 @@ discovery:
 
 recorder:
   db_url: !secret database_url
-  purge_interval: 1
   purge_keep_days: 60
 
 history:
