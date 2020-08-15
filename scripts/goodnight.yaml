@@ -1,7 +1,10 @@
 sequence:
-  - service: alarm_control_panel.alarm_arm_home
-    entity_id: alarm_control_panel.home_alarm
   - service: homeassistant.turn_on
     entity_id:
       - scene.goodnight
       - script.all_christmas_off
+  - condition: state
+    entity_id: input_boolean.away
+    state: 'off'
+  - service: alarm_control_panel.alarm_arm_home
+    entity_id: alarm_control_panel.home_alarm
