@@ -25,7 +25,6 @@ config:
 cloud:
 
 http:
-  base_url: !secret http_base_url
   use_x_forwarded_for: true
   trusted_proxies: !secret http_trusted_proxies
   ip_ban_enabled: true
