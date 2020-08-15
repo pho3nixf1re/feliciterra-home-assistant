@@ -19,12 +19,17 @@ condition:
     - condition: state
       entity_id: input_boolean.away
       state: 'off'
-    - condition: state
-      entity_id: person.brooke_turney
-      state: not_home
-    - condition: state
-      entity_id: person.matthew_turney
-      state: not_home
+    - condition: not
+      conditions:
+        - condition: state
+          entity_id:
+            - person.brooke_turney
+            - person.matthew_turney
+            - person.dally
+            - person.kacky
+            - person.esther_turney
+            - person.milton_turney
+          state: home
 action:
   service: input_boolean.turn_on
   entity_id: input_boolean.away
