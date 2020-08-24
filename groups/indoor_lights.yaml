@@ -14,3 +14,4 @@ entities:
   - switch.step_lights
   - switch.office_light
   - switch.office_desk_lamp
+  - light.great_room_lamp
