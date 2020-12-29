@@ -13,3 +13,4 @@ action:
       - switch.kitchen_pantry_lights
       - switch.library_outlet
       - light.great_room_lamp
+      - switch.anne_outlet
