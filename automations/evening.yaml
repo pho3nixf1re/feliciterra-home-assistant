@@ -13,4 +13,7 @@ action:
       - switch.kitchen_pantry_lights
       - switch.library_outlet
       - light.great_room_lamp
+      - switch.kids_potty_light
       - switch.anne_outlet
+      - switch.miles_hall_lights
+      - switch.miles_room_fan
