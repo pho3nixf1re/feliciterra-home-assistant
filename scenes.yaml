@@ -8,6 +8,7 @@
     group.indoor_lights: off
     group.outdoor_lights: off
     media_player.great_room_tv: off
+    switch.anne_outlet: off
     switch.foyer_outlet: off
     switch.back_porch_lights: off
     switch.main_bedroom_fan: on
