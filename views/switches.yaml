@@ -37,8 +37,8 @@ cards:
       - switch.library_outlet
       - switch.outdoor_outlet
       - switch.outdoor_outlet_2
-      - switch.brooke_office_outlet
       - switch.anne_outlet
+      - switch.miles_room_outlet
   - type: entities
     title: Outdoor lights
     show_header_toggle: false
