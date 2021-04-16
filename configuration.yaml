@@ -84,8 +84,8 @@ notify:
 
 group: !include_dir_named groups
 scene: !include scenes.yaml
-automation: !include_dir_list automations
-script: !include_dir_named scripts
+automation manual: !include_dir_list automations
+automation ui: !include automations.yaml
 
 input_boolean: !include input_booleans.yaml
 
