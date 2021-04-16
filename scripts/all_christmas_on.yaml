@@ -1,11 +1,12 @@
-sequence:
-  - condition: state
-    entity_id: input_boolean.christmas_time
-    state: 'on'
-  - service: homeassistant.turn_on
-    entity_id: group.outdoor_christmas_lights
-  - condition: state
-    entity_id: input_boolean.away
-    state: 'off'
-  - service: homeassistant.turn_on
-    entity_id: group.indoor_christmas_lights
+all_christmas_on:
+  sequence:
+    - condition: state
+      entity_id: input_boolean.christmas_time
+      state: 'on'
+    - service: homeassistant.turn_on
+      entity_id: group.outdoor_christmas_lights
+    - condition: state
+      entity_id: input_boolean.away
+      state: 'off'
+    - service: homeassistant.turn_on
+      entity_id: group.indoor_christmas_lights
