@@ -1,6 +1,8 @@
 # Home Assistant files
 secrets.yaml
 ip_bans.yaml
+automations.yaml
+blueprints
 
 # Home Assistant custom components
 custom_components
