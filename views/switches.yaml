@@ -6,6 +6,7 @@ cards:
     show_header_toggle: false
     entities:
       - switch.miles_fan
+      - switch.anne_fan
       - switch.main_bedroom_fan
   - type: entities
     title: Indoor lights
@@ -38,7 +39,7 @@ cards:
       - switch.outdoor_outlet
       - switch.outdoor_outlet_2
       - switch.anne_outlet
-      - switch.miles_room_outlet
+      - switch.miles_night_light
   - type: entities
     title: Outdoor lights
     show_header_toggle: false

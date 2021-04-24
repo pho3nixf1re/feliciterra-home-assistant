@@ -18,3 +18,4 @@ action:
       - switch.miles_night_light
       - switch.miles_hall_light
       - switch.miles_fan
+      - switch.anne_fan
