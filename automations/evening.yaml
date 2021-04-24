@@ -15,6 +15,6 @@ action:
       - light.great_room_lamp
       - switch.kids_potty_light
       - switch.anne_outlet
-      - switch.miles_room_outlet
+      - switch.miles_night_light
       - switch.miles_hall_light
-      - switch.miles_room_fan
+      - switch.miles_fan

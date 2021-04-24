@@ -16,9 +16,9 @@ goodmorning:
     - service: homeassistant.turn_off
       data:
         entity_id:
-          - switch.miles_room_outlet
+          - switch.miles_night_light
           - switch.main_bedroom_fan
-          - switch.miles_room_fan
+          - switch.miles_fan
     - condition: time
       weekday:
         - mon

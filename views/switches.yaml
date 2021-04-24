@@ -5,7 +5,7 @@ cards:
     title: Indoor fans
     show_header_toggle: false
     entities:
-      - switch.miles_room_fan
+      - switch.miles_fan
       - switch.main_bedroom_fan
   - type: entities
     title: Indoor lights
