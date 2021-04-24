@@ -41,6 +41,12 @@ cards:
       - switch.anne_outlet
       - switch.miles_night_light
   - type: entities
+    title: Attic lights
+    show_header_toggle: true
+    entities:
+      - switch.east_attic_light_1
+      - switch.east_attic_light_2
+  - type: entities
     title: Outdoor lights
     show_header_toggle: false
     entities:

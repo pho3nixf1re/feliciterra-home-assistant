@@ -1,0 +1,5 @@
+name: East attic lights
+icon: mdi:lightbulb
+entities:
+  - switch.east_attic_light_1
+  - switch.east_attic_light_2

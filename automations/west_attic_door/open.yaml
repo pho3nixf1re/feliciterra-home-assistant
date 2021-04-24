@@ -1,9 +1,12 @@
-alias: Notify attic door open
+alias: Attic door open
 trigger:
   platform: state
   entity_id: binary_sensor.play_room_attic_door
   to: 'on'
 action:
+  - service: homeassistant.turn_on
+    entity_id:
+      - group.east_attic_lights
   - service: notify.webapp
     data:
       title: Attic door

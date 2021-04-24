@@ -1,4 +1,4 @@
-alias: Notify attic door open
+alias: Attic door closed
 trigger:
   platform: state
   entity_id: binary_sensor.play_room_attic_door
@@ -8,3 +8,8 @@ action:
     data:
       data:
         tag: attic-door-notification
+  - delay:
+      minutes: 5
+  - service: homeassistant.turn_off
+    entity_id:
+      - group.east_attic_lights
