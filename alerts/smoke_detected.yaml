@@ -1,6 +1,6 @@
 name: Smoke detected
 entity_id: binary_sensor.fire_detectors
-state: 'off'
+state: 'on'
 repeat: 5
 skip_first: false
 can_acknowledge: false
