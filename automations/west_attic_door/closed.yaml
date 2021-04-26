@@ -4,10 +4,6 @@ trigger:
   entity_id: binary_sensor.play_room_attic_door
   to: 'off'
 action:
-  - service: html5.dismiss
-    data:
-      data:
-        tag: attic-door-notification
   - delay:
       minutes: 5
   - service: homeassistant.turn_off

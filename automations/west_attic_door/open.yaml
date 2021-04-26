@@ -7,11 +7,3 @@ action:
   - service: homeassistant.turn_on
     entity_id:
       - group.east_attic_lights
-  - service: notify.webapp
-    data:
-      title: Attic door
-      message:
-        Attic door is open, you should go close it. Be sure to check for the
-        Kit.
-      data:
-        tag: attic-door-notification
