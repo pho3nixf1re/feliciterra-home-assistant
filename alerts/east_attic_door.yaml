@@ -7,6 +7,6 @@ message: The Play room attic door has been opened. Please check on the Kit cat.
 done_message: clear_notification
 data:
   tag: attic-door-open
-  sticky: "true"
+  sticky: 'true'
 notifiers:
   - notify

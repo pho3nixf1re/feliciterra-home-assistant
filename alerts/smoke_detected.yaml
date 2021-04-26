@@ -1,0 +1,14 @@
+name: Smoke detected
+entity_id: binary_sensor.fire_detectors
+state: 'off'
+repeat: 5
+skip_first: false
+can_acknowledge: false
+title: Smoke detected
+message: Smoke detectors have been triggered at Feliciterra.
+done_message: clear_notification
+data:
+  tag: smoke-detected
+  sticky: 'true'
+notifiers:
+  - notify
