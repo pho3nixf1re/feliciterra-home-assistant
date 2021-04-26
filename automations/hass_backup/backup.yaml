@@ -1,7 +1,7 @@
 alias: Home Assistant backup
 trigger:
   platform: time
-  at: '1:00:00'
+  at: '01:00:00'
 action:
 - service: auto_backup.snapshot_full
   data_template:
