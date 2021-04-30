@@ -85,3 +85,12 @@ cards:
     show_header_toggle: false
     entities:
       - input_boolean.door_timeouts
+  - type: grid
+    columns: 2
+    cards:
+      - type: thermostat
+        entity: climate.mudroom_hall
+      - type: thermostat
+        entity: climate.roll_tide_hall
+      - type: thermostat
+        entity: climate.playroom
