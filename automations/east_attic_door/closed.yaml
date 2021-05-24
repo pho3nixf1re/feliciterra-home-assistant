@@ -1,11 +1,11 @@
 alias: Attic door closed
 trigger:
   platform: state
-  entity_id: binary_sensor.west_attic_door
+  entity_id: binary_sensor.play_room_attic_door
   to: 'off'
 action:
   - delay:
       minutes: 5
   - service: homeassistant.turn_off
     entity_id:
-      - switch.west_attic_lights
+      - group.east_attic_lights

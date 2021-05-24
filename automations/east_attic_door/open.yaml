@@ -1,9 +1,9 @@
 alias: Attic door open
 trigger:
   platform: state
-  entity_id: binary_sensor.west_attic_door
+  entity_id: binary_sensor.play_room_attic_door
   to: 'on'
 action:
   - service: homeassistant.turn_on
     entity_id:
-      - switch.west_attic_lights
+      - group.east_attic_lights
