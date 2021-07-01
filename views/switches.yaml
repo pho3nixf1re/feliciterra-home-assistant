@@ -21,7 +21,7 @@ cards:
       - switch.kids_potty_light
       - switch.kitchen_cabinet_lights
       - switch.kitchen_pantry_lights
-      - switch.library_lights
+      - light.library_lights
       - switch.office_light
       - switch.office_desk_lamp
       - switch.miles_hall_light
