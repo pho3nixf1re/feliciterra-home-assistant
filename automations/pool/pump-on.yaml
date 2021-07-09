@@ -1,0 +1,8 @@
+alias: Pool pump on
+trigger:
+  platform: sun
+  event: sunrise
+action:
+  - service: homeassistant.turn_on
+    entity_id:
+      - switch.pool_pump

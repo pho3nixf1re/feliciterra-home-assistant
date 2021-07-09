@@ -14,5 +14,6 @@
     switch.back_porch_lights: off
     switch.main_bedroom_fan: on
     switch.library_outlet: off
+    switch.pool_lights: off
     group.indoor_christmas_lights: off
     group.outdoor_christmas_lights: off

@@ -1,0 +1,9 @@
+alias: Pool shutdown
+trigger:
+  platform: sun
+  event: sunset
+action:
+  - service: homeassistant.turn_off
+    entity_id:
+      - switch.pool_pump
+      - switch.pool_doggy

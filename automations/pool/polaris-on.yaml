@@ -1,0 +1,9 @@
+alias: Polaris on
+trigger:
+  platform: sun
+  event: sunset
+  offset: '-01:00:00'
+action:
+  - service: homeassistant.turn_on
+    entity_id:
+      - switch.pool_doggy

@@ -65,3 +65,6 @@ cards:
       - automation.evening
       - automation.before_sunset
       - automation.home_assistant_backup
+      - automation.polaris_on
+      - automation.pool_pump_on
+      - automation.pool_shutdown
