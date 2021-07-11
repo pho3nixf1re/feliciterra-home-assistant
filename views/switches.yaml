@@ -46,6 +46,7 @@ cards:
     entities:
       - switch.east_attic_light_1
       - switch.east_attic_light_2
+      - switch.west_attic_lights
   - type: entities
     title: Outdoor lights
     show_header_toggle: false
