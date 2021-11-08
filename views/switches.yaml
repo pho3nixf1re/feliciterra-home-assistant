@@ -27,6 +27,7 @@ cards:
       - switch.office_light
       - switch.office_desk_lamp
       - light.anne_room_light
+      - switch.anne_night_light
       - light.miles_hall_light
       - light.miles_room_light
       - switch.mudroom_hallway_lights
@@ -42,7 +43,6 @@ cards:
       - switch.library_outlet
       - switch.outdoor_outlet
       - switch.outdoor_outlet_2
-      - switch.anne_outlet
       - switch.miles_night_light
   - type: entities
     title: Attic lights
