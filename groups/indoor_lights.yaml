@@ -2,6 +2,8 @@ name: Indoor lights
 icon: mdi:lightbulb
 entities:
   - switch.main_bedroom_lamp
+  - light.main_bedroom_light
+  - switch.main_bedroom_potty_light
   - switch.great_room_entry_lights
   - switch.great_room_center_lights
   - switch.great_room_window_lights
@@ -15,3 +17,8 @@ entities:
   - switch.office_light
   - switch.office_desk_lamp
   - light.great_room_lamp
+  - light.anne_room_light
+  - switch.anne_outlet
+  - switch.miles_night_light
+  - light.miles_hall_light
+  - light.miles_room_light
