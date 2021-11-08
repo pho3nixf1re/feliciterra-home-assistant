@@ -1,13 +1,13 @@
 alias: Home Assistant backup failed
 trigger:
   platform: event
-  event_type: auto_backup.snapshot_failed
+  event_type: auto_backup.backup_failed
 action:
   - service: notify.webapp
     data_template:
-      title: Snapshot failed
+      title: Backup failed
       message: |
-        Configuration snapshot failed for {{trigger.event.data.name}}.
+        Configuration backup failed for {{trigger.event.data.name}}.
         Error: {{ trigger.event.data.error }}
       data:
         tag: hass-backup-failed-notification
