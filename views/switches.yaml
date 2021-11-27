@@ -43,6 +43,7 @@ cards:
       - switch.library_outlet
       - switch.outdoor_outlet
       - switch.outdoor_outlet_2
+      - switch.outdoor_outlet_3
       - switch.miles_night_light
   - type: entities
     title: Attic lights
