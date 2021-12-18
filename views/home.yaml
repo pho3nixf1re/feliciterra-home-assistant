@@ -13,17 +13,6 @@ cards:
       title: Door open
   - type: conditional
     conditions:
-      - entity: input_boolean.asleep
-        state: 'on'
-    card:
-      type: button
-      icon: mdi:sleep
-      entity: input_boolean.asleep
-      show_name: false
-      tap_action:
-        action: toggle
-  - type: conditional
-    conditions:
       - entity: binary_sensor.fire_detectors
         state: 'on'
     card:
@@ -46,8 +35,6 @@ cards:
         action: more-info
   - type: conditional
     conditions:
-      - entity: input_boolean.asleep
-        state: 'off'
       - entity: sun.sun
         state: below_horizon
     card:
