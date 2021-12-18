@@ -74,6 +74,14 @@ cards:
     show_name: true
     tap_action:
       action: toggle
+  - type: entities
+    title: Doors
+    show_header_toggle: false
+    entities:
+      - lock.front_door
+      - lock.garage_door
+      - cover.left_garage_door
+      - cover.left_garage_door
   - type: grid
     columns: 2
     cards:
