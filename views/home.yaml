@@ -16,7 +16,7 @@ cards:
       - entity: input_boolean.asleep
         state: 'on'
     card:
-      type: entity-button
+      type: button
       icon: mdi:sleep
       entity: input_boolean.asleep
       show_name: false
@@ -27,7 +27,7 @@ cards:
       - entity: binary_sensor.fire_detectors
         state: 'on'
     card:
-      type: entity-button
+      type: button
       icon: mdi:fire
       entity: binary_sensor.fire_detectors
       name: Fire has been detected
@@ -38,7 +38,7 @@ cards:
       - entity: binary_sensor.nas
         state: 'off'
     card:
-      type: entity-button
+      type: button
       icon: mdi:server-off
       entity: binary_sensor.nas
       name: NAS server offline
@@ -51,7 +51,7 @@ cards:
       - entity: sun.sun
         state: below_horizon
     card:
-      type: entity-button
+      type: button
       icon: mdi:weather-night
       entity: input_boolean.asleep
       show_name: false
