@@ -81,10 +81,12 @@ cards:
       entities:
         - group.indoor_christmas_lights
         - group.outdoor_christmas_lights
-  - type: entities
-    show_header_toggle: false
-    entities:
-      - input_boolean.door_timeouts
+  - type: button
+    icon: mdi:store-clock
+    entity: input_boolean.door_timeouts
+    show_name: true
+    tap_action:
+      action: toggle
   - type: grid
     columns: 2
     cards:
