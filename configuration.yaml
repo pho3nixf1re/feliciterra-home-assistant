@@ -41,7 +41,6 @@ stream:
 # For more information, please see:
 # https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
 updater:
-  include_used_components: true
 
 system_health:
 
