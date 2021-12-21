@@ -102,7 +102,4 @@ lyric:
 
 rest_command: !include_dir_named rest_commands
 
-auto_backup:
-  auto_purge: true
-
 map:

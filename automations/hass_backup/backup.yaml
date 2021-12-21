@@ -1,9 +1,0 @@
-alias: Home Assistant backup
-trigger:
-  platform: time
-  at: '01:00:00'
-action:
-  - service: auto_backup.backup_full
-    data_template:
-      name: "daily-backup--{{ now().isoformat(timespec='minutes') }}"
-      keep_days: 7
