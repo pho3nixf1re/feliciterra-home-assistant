@@ -81,7 +81,7 @@ cards:
       - lock.front_door
       - lock.garage_door
       - cover.left_garage_door
-      - cover.left_garage_door
+      - cover.right_garage_door
   - type: grid
     columns: 2
     cards:
