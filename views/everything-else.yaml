@@ -49,22 +49,14 @@ cards:
       - binary_sensor.front_door
       - binary_sensor.back_door
       - binary_sensor.garage_inner_door
-  - type: entities
-    title: Automations
-    show_header_toggle: false
-    entities:
-      - automation.left_garage_door_timeout
-      - automation.right_garage_door_timeout
-      - automation.front_door_lock_timeout
-      - automation.arriving
-      - automation.leaving
-      - automation.goodnight
-      - automation.sunrise
-      - automation.wakeup
-      - automation.wakeup_teardown
-      - automation.evening
-      - automation.before_sunset
-      - automation.home_assistant_backup
-      - automation.polaris_on
-      - automation.pool_pump_on
-      - automation.pool_shutdown
+  - type: custom:auto-entities
+    card:
+      type: entities
+      title: Automations
+      show_header_toggle: false
+    filter:
+      include:
+        - domain: automation
+    sort:
+      method: name
+      ignore_case: true
