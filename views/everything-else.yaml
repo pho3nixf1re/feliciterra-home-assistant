@@ -18,18 +18,6 @@ cards:
       - input_boolean.christmas_time
       - input_boolean.asleep
   - type: entities
-    title: Door locks
-    show_header_toggle: false
-    entities:
-      - lock.front_door
-      - lock.garage_door
-  - type: entities
-    title: Garage doors
-    show_header_toggle: false
-    entities:
-      - cover.left_garage_door
-      - cover.right_garage_door
-  - type: entities
     title: Alarm zones
     show_header_toggle: false
     entities:
