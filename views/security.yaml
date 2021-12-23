@@ -1,0 +1,24 @@
+title: Security
+icon: mdi:security
+cards:
+  - type: glance
+    title: Cameras
+    entities:
+      # - camera.door
+      - camera.front
+      - camera.side
+      - camera.pool
+      - camera.anne
+      - camera.miles
+      - camera.great_room
+      # - camera.playroom
+  - type: alarm-panel
+    entity: alarm_control_panel.home_alarm
+  - type: entities
+    title: Doors
+    show_header_toggle: false
+    entities:
+      - lock.front_door
+      - lock.garage_door
+      - cover.left_garage_door
+      - cover.right_garage_door
