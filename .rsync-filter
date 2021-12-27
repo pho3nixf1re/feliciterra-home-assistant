@@ -5,3 +5,5 @@
 - custom_components
 - www
 - node-red
+- automations.yaml
+- blueprints
