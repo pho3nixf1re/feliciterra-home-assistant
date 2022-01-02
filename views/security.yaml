@@ -6,7 +6,7 @@ cards:
     entities:
       # - camera.door
       - camera.front
-      - camera.side
+      - camera.west_side
       - camera.pool
       - camera.anne
       - camera.miles
