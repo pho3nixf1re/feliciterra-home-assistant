@@ -4,7 +4,7 @@ cards:
   - type: glance
     title: Cameras
     entities:
-      # - camera.door
+      - camera.front_door
       - camera.front
       - camera.west_side
       - camera.pool
