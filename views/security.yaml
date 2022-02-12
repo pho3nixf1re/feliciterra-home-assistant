@@ -11,7 +11,7 @@ cards:
       - camera.anne
       - camera.miles
       - camera.great_room
-      - camera.playroom
+      - camera.play_room
   - type: alarm-panel
     entity: alarm_control_panel.home_alarm
   - type: entities
