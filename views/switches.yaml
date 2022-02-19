@@ -15,9 +15,9 @@ cards:
       - switch.main_bedroom_lamp
       - light.main_bedroom_light
       - switch.main_bedroom_potty_light
-      - switch.great_room_entry_lights
-      - switch.great_room_center_lights
-      - switch.great_room_window_lights
+      - light.great_room_entry_lights
+      - light.great_room_center_lights
+      - light.great_room_window_lights
       - light.great_room_lamp
       - switch.pool_bathroom_tub_light
       - switch.kids_potty_light
