@@ -21,6 +21,7 @@ action:
       - light.great_room_center_lights
       - switch.kitchen_pantry_lights
       - switch.kitchen_cabinet_lights
+      - switch.kitchen_sink_light
   - service: cover.close_cover
     entity_id:
       - cover.left_garage_door

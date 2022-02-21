@@ -15,6 +15,7 @@ cards:
       - switch.main_bedroom_lamp
       - light.main_bedroom_light
       - switch.main_bedroom_potty_light
+      - switch.foyer_lights
       - light.great_room_entry_lights
       - light.great_room_center_lights
       - light.great_room_window_lights
@@ -22,6 +23,7 @@ cards:
       - switch.pool_bathroom_tub_light
       - switch.kids_potty_light
       - switch.kitchen_cabinet_lights
+      - switch.kitchen_sink_light
       - switch.kitchen_pantry_lights
       - light.library_lights
       - switch.office_light
@@ -31,6 +33,7 @@ cards:
       - light.miles_hall_light
       - light.miles_room_light
       - switch.mudroom_hallway_lights
+      - switch.laundry_room_lights
       - switch.play_room_lights
       - switch.step_lights
   - type: entities

@@ -10,8 +10,11 @@ entities:
   - switch.pool_bathroom_tub_light
   - switch.kitchen_cabinet_lights
   - switch.kitchen_pantry_lights
+  - switch.kitchen_sink_light
+  - switch.foyer_lights
   - light.library_lights
   - switch.mudroom_hallway_lights
+  - switch.laundry_room_lights
   - switch.play_room_lights
   - switch.step_lights
   - switch.office_light
