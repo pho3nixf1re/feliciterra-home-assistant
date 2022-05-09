@@ -31,13 +31,6 @@ mobile_app:
 # Used to support RTSP video feeds
 stream:
 
-# Checks for available updates
-# Note: This component will send some information about your system to
-# the developers to assist with development of Home Assistant.
-# For more information, please see:
-# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
-updater:
-
 system_health:
 
 system_log:
@@ -72,6 +65,12 @@ tts:
     time_memory: 300
 
 media_player: !include media_players.yaml
+
+# camera:
+#   - platform: generic
+#     name: WKRG
+#     still_image_url: http://10.0.0.23:5004/auto/v3.1
+#     stream_source: http://10.0.0.23:5004/auto/v3.1
 
 notify:
   - name: webapp
