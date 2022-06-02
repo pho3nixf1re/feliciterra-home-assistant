@@ -91,10 +91,6 @@ input_boolean: !include input_booleans.yaml
 
 envisalink: !include envisalink.yaml
 
-lyric:
-  client_id: !secret honeywell_home_key
-  client_secret: !secret honeywell_home_secret
-
 rest_command: !include_dir_named rest_commands
 
 map:
