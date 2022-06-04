@@ -6,5 +6,7 @@ trigger:
 action:
   - service: tts.cloud_say
     data:
-      entity_id: media_player.driveway_alarm
+      entity_id:
+        - media_player.pool_speaker
+        - media_player.driveway_alarm
       message: Vehicle in driveway
