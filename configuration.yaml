@@ -64,6 +64,8 @@ tts:
     cache: true
     time_memory: 300
 
+media_source:
+
 media_player: !include media_players.yaml
 
 # camera:
