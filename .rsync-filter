@@ -7,3 +7,5 @@
 - node-red
 - automations.yaml
 - blueprints
+- .vscode
+- .git
