@@ -1,5 +1,0 @@
-title: Feliciterra
-views:
-  - !include views/home.yaml
-  - !include views/switches.yaml
-  - !include views/everything-else.yaml
