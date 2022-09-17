@@ -83,7 +83,8 @@ notify:
 
 alert: !include_dir_named alerts
 
-scene: !include_dir_list scenes
+scene: !include scenes.yaml
+
 #automation manual: !include_dir_list automations
 automation ui: !include automations.yaml
 

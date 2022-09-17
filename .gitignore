@@ -6,10 +6,11 @@ image
 tts
 *.log*
 
-# Home Assistant automations, blueprints, scripts managed in UI
+# Home Assistant automations, blueprints, scripts, scenes managed in UI
 blueprints/*
 automations.yaml
 scripts.yaml
+scenes.yaml
 
 # Home Assistant custom components
 custom_components
