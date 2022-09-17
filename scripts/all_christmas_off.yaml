@@ -1,9 +1,0 @@
-all_christmas_off:
-  sequence:
-    - condition: state
-      entity_id: input_boolean.christmas_time
-      state: 'on'
-    - service: homeassistant.turn_off
-      entity_id:
-        - switch.outdoor_christmas
-        - switch.indoor_christmas
