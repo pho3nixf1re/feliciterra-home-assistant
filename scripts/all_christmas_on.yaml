@@ -4,9 +4,9 @@ all_christmas_on:
       entity_id: input_boolean.christmas_time
       state: 'on'
     - service: homeassistant.turn_on
-      entity_id: group.outdoor_christmas_lights
+      entity_id: switch.outdoor_christmas
     - condition: state
       entity_id: input_boolean.away
       state: 'off'
     - service: homeassistant.turn_on
-      entity_id: group.indoor_christmas_lights
+      entity_id: switch.indoor_christmas

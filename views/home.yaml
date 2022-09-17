@@ -66,8 +66,8 @@ cards:
     card:
       type: entities
       entities:
-        - group.indoor_christmas_lights
-        - group.outdoor_christmas_lights
+        - switch.indoor_christmas
+        - switch.outdoor_christmas
   - type: button
     icon: mdi:store-clock
     entity: input_boolean.door_timeouts

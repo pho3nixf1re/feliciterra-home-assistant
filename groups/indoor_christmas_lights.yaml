@@ -1,5 +1,0 @@
-name: Indoor Christmas lights
-icon: mdi:lightbulb
-entities:
-  - switch.foyer_outlet
-  - switch.great_room_back_wall

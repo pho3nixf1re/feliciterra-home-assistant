@@ -1,5 +1,0 @@
-name: All Christmas lights
-icon: mdi:lightbulb
-entities:
-  - group.indoor_christmas_lights
-  - group.outdoor_christmas_lights

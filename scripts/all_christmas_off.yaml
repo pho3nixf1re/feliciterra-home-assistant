@@ -5,5 +5,5 @@ all_christmas_off:
       state: 'on'
     - service: homeassistant.turn_off
       entity_id:
-        - group.outdoor_christmas_lights
-        - group.indoor_christmas_lights
+        - switch.outdoor_christmas
+        - switch.indoor_christmas
