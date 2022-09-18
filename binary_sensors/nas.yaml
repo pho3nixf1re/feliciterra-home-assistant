@@ -1,5 +1,5 @@
 platform: ping
 name: nas
-host: 10.0.0.110
+host: 10.0.0.105
 count: 2
 scan_interval: 15
