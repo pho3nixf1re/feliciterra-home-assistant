@@ -54,6 +54,10 @@ logbook:
 
 sun:
 
+group: !include_dir_named groups
+
+template: !include_dir_list templates
+
 sensor: !include_dir_list sensors
 
 binary_sensor: !include_dir_list binary_sensors
