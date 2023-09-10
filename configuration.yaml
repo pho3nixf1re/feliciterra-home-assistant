@@ -34,8 +34,6 @@ logger:
 
 hassio:
 
-discovery:
-
 recorder:
   db_url: !secret database_url
   purge_keep_days: 60
