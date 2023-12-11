@@ -50,8 +50,6 @@ template: !include_dir_list templates
 
 sensor: !include_dir_list sensors
 
-binary_sensor: !include_dir_list binary_sensors
-
 tts:
   - platform: google_translate
     service_name: google_say
