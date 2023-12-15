@@ -39,6 +39,8 @@ notify:
 
 alert: !include_dir_named alerts
 
+automation: !include automations.yaml
+
 script: !include scripts.yaml
 
 input_boolean: !include input_booleans.yaml
