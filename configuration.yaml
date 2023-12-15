@@ -2,15 +2,10 @@ homeassistant:
   customize_glob: !include customize_glob.yaml
   customize_domain: !include customize_domain.yaml
 
+default_config:
+
 frontend:
   themes: !include_dir_merge_named themes
-
-lovelace:
-  mode: storage
-
-config:
-
-cloud:
 
 http:
   use_x_forwarded_for: true
@@ -18,19 +13,8 @@ http:
   ip_ban_enabled: true
   login_attempts_threshold: 5
 
-mobile_app:
-
-# Used to support RTSP video feeds
-stream:
-
-system_health:
-
-system_log:
-
 logger:
   default: warn
-  # logs:
-  #   custom_components.hacs: debug
 
 hassio:
 
@@ -38,33 +22,13 @@ recorder:
   db_url: !secret database_url
   purge_keep_days: 60
 
-history:
-
-logbook:
-
-sun:
-
 group: !include_dir_named groups
-
-template: !include_dir_list templates
-
-sensor: !include_dir_list sensors
 
 tts:
   - platform: google_translate
     service_name: google_say
     cache: true
     time_memory: 300
-
-media_source:
-
-media_player: !include media_players.yaml
-
-# camera:
-#   - platform: generic
-#     name: WKRG
-#     still_image_url: http://10.0.0.23:5004/auto/v3.1
-#     stream_source: http://10.0.0.23:5004/auto/v3.1
 
 notify:
   - name: webapp
@@ -77,15 +41,6 @@ alert: !include_dir_named alerts
 
 script: !include scripts.yaml
 
-scene: !include scenes.yaml
-
-#automation manual: !include_dir_list automations
-automation ui: !include automations.yaml
-
 input_boolean: !include input_booleans.yaml
 
 envisalink: !include envisalink.yaml
-
-rest_command: !include_dir_named rest_commands
-
-map:
