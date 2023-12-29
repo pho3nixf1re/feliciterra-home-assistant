@@ -1,0 +1,9 @@
+name: Driveway Vehicle Alert
+done_message: No vehicle detected in the driveway.
+entity_id: binary_sensor.front_vehicle_detected
+state: 'on'
+repeat: 5
+can_acknowledge: true
+skip_first: false
+notifiers:
+  - notify
