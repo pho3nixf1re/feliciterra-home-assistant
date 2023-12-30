@@ -8,8 +8,8 @@ tts
 
 # Home Assistant automations, blueprints, scripts, scenes managed in UI
 blueprints/*
-automations.yaml
-scripts.yaml
+automation.yaml
+script.yaml
 scenes.yaml
 
 # Home Assistant custom components
