@@ -3,13 +3,12 @@ entity_id: binary_sensor.nas
 state: 'off'
 repeat:
   - 1
-  - 9
+  - 5
   - 10
 skip_first: true
 can_acknowledge: true
 title: NAS offline
 message: NAS is offline. Please power cycle the hardware.
-done_message: clear_notification
 data:
   tag: nas-offline
   sticky: 'true'

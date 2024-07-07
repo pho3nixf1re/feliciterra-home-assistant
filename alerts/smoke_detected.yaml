@@ -3,10 +3,9 @@ entity_id: binary_sensor.fire_detectors
 state: 'on'
 repeat: 5
 skip_first: false
-can_acknowledge: false
+can_acknowledge: true
 title: Smoke detected
 message: Smoke detectors have been triggered at Feliciterra.
-done_message: clear_notification
 data:
   tag: smoke-detected
   sticky: 'true'

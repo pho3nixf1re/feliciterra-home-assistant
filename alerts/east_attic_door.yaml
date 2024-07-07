@@ -4,7 +4,6 @@ state: 'on'
 repeat: 15
 title: Play room attic door is open
 message: The Play room attic door has been opened. Please check on the Kit cat.
-done_message: clear_notification
 data:
   tag: attic-door-open
   sticky: 'true'

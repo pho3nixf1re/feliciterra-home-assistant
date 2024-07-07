@@ -1,9 +1,9 @@
 name: Driveway Vehicle Alert
-done_message: No vehicle detected in the driveway.
 entity_id: binary_sensor.front_vehicle_detected
 state: 'on'
-repeat: 5
+repeat: 10
 can_acknowledge: true
 skip_first: false
 notifiers:
-  - notify
+  - notify.mobile_app_ticwatch_pro_3_gps_0385
+  - notify.mobile_app_matt_pixel_7

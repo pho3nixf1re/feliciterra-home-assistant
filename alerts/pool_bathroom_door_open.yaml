@@ -3,10 +3,10 @@ entity_id: binary_sensor.pool_bathroom_door
 state: 'on'
 repeat: 15
 title: Pool bathroom door is open
+can_acknowledge: false
 message:
   Pool bathroom door is open, you should go close it. Be sure to check for
   the pets and children.
-done_message: clear_notification
 data:
   tag: pool-bathroom-door-open
   sticky: 'true'
